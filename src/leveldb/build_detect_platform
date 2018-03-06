@@ -187,7 +187,7 @@ EOF
         COMMON_FLAGS="$COMMON_FLAGS -DLEVELDB_PLATFORM_POSIX"
     fi
 
-    # Test whether tcmalloc is available
+    # Test whether tcmalloc is availablFe
     $CXX $CXXFLAGS -x c++ - -o $CXXOUTPUT -ltcmalloc 2>/dev/null  <<EOF
       int main() {}
 EOF

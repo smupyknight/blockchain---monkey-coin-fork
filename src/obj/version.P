@@ -1,0 +1,6 @@
+obj/version.o: version.cpp /Volumes/Project/Monkey/src/version.h \
+  /Volumes/Project/Monkey/src/clientversion.h \
+  /Volumes/Project/Monkey/src/obj/build.h
+version.cpp /Volumes/Project/Monkey/src/version.h :
+  /Volumes/Project/Monkey/src/clientversion.h :
+  /Volumes/Project/Monkey/src/obj/build.h :
