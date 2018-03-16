@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6f470e2-4596-4074-a131-1e177f8aa919" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
       <change beforePath="$PROJECT_DIR$/src/main.h" afterPath="$PROJECT_DIR$/src/main.h" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -31,8 +31,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="2577" column="9" lean-forward="true" selection-start-line="2577" selection-start-column="9" selection-end-line="2577" selection-end-column="9" />
+            <state relative-caret-position="454">
+              <caret line="2604" column="35" lean-forward="true" selection-start-line="2604" selection-start-column="35" selection-end-line="2604" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -51,8 +51,8 @@
       <file leaf-file-name="checkpoints.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/checkpoints.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+            <state relative-caret-position="-66">
+              <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -61,8 +61,8 @@
       <file leaf-file-name="base58.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/base58.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2175">
-              <caret line="145" column="21" lean-forward="false" selection-start-line="145" selection-start-column="21" selection-end-line="145" selection-end-column="21" />
+            <state relative-caret-position="229">
+              <caret line="133" column="24" lean-forward="true" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -122,8 +122,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nCo</find>
-      <find>nCoin</find>
       <find>nCoinBase</find>
       <find>nCoinBaseMut</find>
       <find>nCoinBaseMu</find>
@@ -152,6 +150,8 @@
       <find>merkleroot</find>
       <find>checkblock</find>
       <find>hashGenesisBlock</find>
+      <find>bnProofOfWorkLimit</find>
+      <find>hashmerkle</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -186,7 +186,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="790" />
+    <option name="x" value="822" />
     <option name="width" value="1071" />
     <option name="height" value="1006" />
   </component>
@@ -350,12 +350,12 @@
       <workItem from="1520923856874" duration="20248000" />
       <workItem from="1521045771598" duration="974000" />
       <workItem from="1521209447680" duration="3116000" />
-      <workItem from="1521217152484" duration="764000" />
+      <workItem from="1521217152484" duration="1613000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55847000" />
+    <option name="totallyTimeSpent" value="56696000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -367,7 +367,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="790" y="0" width="1071" height="1006" extended-state="0" />
+    <frame x="822" y="0" width="1071" height="1006" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24463119" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -727,14 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/base58.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2175">
-          <caret line="145" column="21" lean-forward="false" selection-start-line="145" selection-start-column="21" selection-end-line="145" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -751,18 +743,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/base58.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="133" column="24" lean-forward="true" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/checkpoints.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        <state relative-caret-position="-66">
+          <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="2577" column="9" lean-forward="true" selection-start-line="2577" selection-start-column="9" selection-end-line="2577" selection-end-column="9" />
+        <state relative-caret-position="454">
+          <caret line="2604" column="35" lean-forward="true" selection-start-line="2604" selection-start-column="35" selection-end-line="2604" selection-end-column="35" />
           <folding />
         </state>
       </provider>

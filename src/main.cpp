@@ -2559,9 +2559,9 @@ bool LoadBlockIndex(bool fAllowNew)
         if (!fAllowNew)
             return false;
 
-        const char* pszTimestamp = "https://news.bitcoin.com/token-airdrops-taking-off-despite-legal-concerns";
+        const char* pszTimestamp = "https://news.bitcoin.com/mark-karpeles-wants-resurrect-mt-gox-ico";
         CTransaction txNew;
-        txNew.nTime = 1521210739;
+        txNew.nTime = 1511096400;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2571,12 +2571,12 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1521210739;
+        block.nTime    = 1511096400;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 1994212;
+        block.nNonce   = 1774559;
 		if(fTestNet)
         {
-            block.nNonce   = 1994512;
+            block.nNonce   = 1838579;
         }
         if (false && block.GetHash() != (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet)) {
             // This will figure out a valid hash and Nonce if you're
@@ -2599,7 +2599,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nNonce = %u \n", block.nNonce);
 
         //// debug print
-        assert(block.hashMerkleRoot == uint256("0x0b22a3219be05fd9677092c9399705da448b7e633fe710351ba3c5e1f5f80a97"));
+        assert(block.hashMerkleRoot == uint256("0xc08b7e10f87514a98554968c06868edbdb6d97ad560112b3c1f9c90c09656d95"));
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
