@@ -1,12 +1,9 @@
 # temporary build files
 build
-Makefile
-Makefile.*
 monkey-Qt.app
 Monkey-qt*
 monkeyd
 .qmake.stash
-Makefile
 qrc_*.cpp
 *.qm
 *.pro.user
