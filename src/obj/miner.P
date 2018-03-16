@@ -1,8 +1,8 @@
-obj/miner.o: miner.cpp /Volumes/Project/Monkey/src/txdb.h \
-  /Volumes/Project/Monkey/src/txdb-leveldb.h \
-  /Volumes/Project/Monkey/src/main.h \
-  /Volumes/Project/Monkey/src/bignum.h \
-  /Volumes/Project/Monkey/src/serialize.h \
+obj/miner.o: miner.cpp /Volumes/Project/Monkey-daemon-qt-build/src/txdb.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/txdb-leveldb.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/main.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/bignum.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/serialize.h \
   /opt/local/include/boost/type_traits/is_fundamental.hpp \
   /opt/local/include/boost/type_traits/is_arithmetic.hpp \
   /opt/local/include/boost/type_traits/is_integral.hpp \
@@ -47,7 +47,7 @@ obj/miner.o: miner.cpp /Volumes/Project/Monkey/src/txdb.h \
   /opt/local/include/boost/type_traits/remove_reference.hpp \
   /opt/local/include/boost/utility/swap.hpp \
   /opt/local/include/boost/core/swap.hpp \
-  /Volumes/Project/Monkey/src/allocators.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/allocators.h \
   /opt/local/include/boost/thread/mutex.hpp \
   /opt/local/include/boost/thread/detail/platform.hpp \
   /opt/local/include/boost/config/requires_threads.hpp \
@@ -435,17 +435,17 @@ obj/miner.o: miner.cpp /Volumes/Project/Monkey/src/txdb.h \
   /opt/local/include/boost/chrono/detail/system.hpp \
   /opt/local/include/boost/chrono/clock_string.hpp \
   /opt/local/include/boost/chrono/ceil.hpp \
-  /Volumes/Project/Monkey/src/version.h \
-  /Volumes/Project/Monkey/src/clientversion.h \
-  /Volumes/Project/Monkey/src/uint256.h /opt/local/include/openssl/bn.h \
-  /opt/local/include/openssl/e_os2.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/version.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/clientversion.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/uint256.h \
+  /opt/local/include/openssl/bn.h /opt/local/include/openssl/e_os2.h \
   /opt/local/include/openssl/opensslconf.h \
   /opt/local/include/openssl/ossl_typ.h \
   /opt/local/include/openssl/crypto.h /opt/local/include/openssl/stack.h \
   /opt/local/include/openssl/safestack.h \
   /opt/local/include/openssl/opensslv.h \
   /opt/local/include/openssl/symhacks.h \
-  /Volumes/Project/Monkey/src/sync.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/sync.h \
   /opt/local/include/boost/thread/recursive_mutex.hpp \
   /opt/local/include/boost/thread/pthread/recursive_mutex.hpp \
   /opt/local/include/boost/thread/locks.hpp \
@@ -462,8 +462,8 @@ obj/miner.o: miner.cpp /Volumes/Project/Monkey/src/txdb.h \
   /opt/local/include/boost/enable_shared_from_this.hpp \
   /opt/local/include/boost/smart_ptr/enable_shared_from_this.hpp \
   /opt/local/include/boost/smart_ptr/weak_ptr.hpp \
-  /Volumes/Project/Monkey/src/net.h /opt/local/include/boost/array.hpp \
-  /opt/local/include/boost/swap.hpp \
+  /Volumes/Project/Monkey-daemon-qt-build/src/net.h \
+  /opt/local/include/boost/array.hpp /opt/local/include/boost/swap.hpp \
   /opt/local/include/boost/detail/iterator.hpp \
   /opt/local/include/boost/foreach.hpp \
   /opt/local/include/boost/mpl/assert.hpp \
@@ -559,12 +559,14 @@ obj/miner.o: miner.cpp /Volumes/Project/Monkey/src/txdb.h \
   /opt/local/include/boost/type_traits/aligned_storage.hpp \
   /opt/local/include/boost/type_traits/alignment_of.hpp \
   /opt/local/include/boost/type_traits/type_with_alignment.hpp \
-  /opt/local/include/openssl/rand.h /Volumes/Project/Monkey/src/mruset.h \
-  /Volumes/Project/Monkey/src/netbase.h \
-  /Volumes/Project/Monkey/src/compat.h \
-  /Volumes/Project/Monkey/src/protocol.h \
-  /Volumes/Project/Monkey/src/addrman.h \
-  /Volumes/Project/Monkey/src/util.h /opt/local/include/boost/thread.hpp \
+  /opt/local/include/openssl/rand.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/mruset.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/netbase.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/compat.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/protocol.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/addrman.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/util.h \
+  /opt/local/include/boost/thread.hpp \
   /opt/local/include/boost/thread/thread.hpp \
   /opt/local/include/boost/thread/thread_only.hpp \
   /opt/local/include/boost/thread/detail/thread.hpp \
@@ -786,7 +788,7 @@ obj/miner.o: miner.cpp /Volumes/Project/Monkey/src/txdb.h \
   /opt/local/include/boost/filesystem/string_file.hpp \
   /opt/local/include/boost/filesystem/fstream.hpp \
   /opt/local/include/openssl/sha.h /opt/local/include/openssl/ripemd.h \
-  /Volumes/Project/Monkey/src/script.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/script.h \
   /opt/local/include/boost/variant.hpp \
   /opt/local/include/boost/variant/variant.hpp \
   /opt/local/include/boost/variant/detail/config.hpp \
@@ -967,10 +969,11 @@ obj/miner.o: miner.cpp /Volumes/Project/Monkey/src/txdb.h \
   /opt/local/include/boost/variant/detail/element_index.hpp \
   /opt/local/include/boost/variant/visitor_ptr.hpp \
   /opt/local/include/boost/variant/bad_visit.hpp \
-  /Volumes/Project/Monkey/src/keystore.h \
-  /Volumes/Project/Monkey/src/crypter.h \
-  /Volumes/Project/Monkey/src/key.h /opt/local/include/openssl/ec.h \
-  /opt/local/include/openssl/asn1.h /opt/local/include/openssl/bio.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/keystore.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/crypter.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/key.h \
+  /opt/local/include/openssl/ec.h /opt/local/include/openssl/asn1.h \
+  /opt/local/include/openssl/bio.h \
   /opt/local/include/boost/signals2/signal.hpp \
   /opt/local/include/boost/signals2/connection.hpp \
   /opt/local/include/boost/signals2/detail/auto_buffer.hpp \
@@ -1038,49 +1041,50 @@ obj/miner.o: miner.cpp /Volumes/Project/Monkey/src/txdb.h \
   /opt/local/include/boost/preprocessor/iteration/local.hpp \
   /opt/local/include/boost/preprocessor/iteration/self.hpp \
   /opt/local/include/boost/signals2/detail/signal_template.hpp \
-  /Volumes/Project/Monkey/src/scrypt.h \
-  /Volumes/Project/Monkey/src/zerocoin/Zerocoin.h \
-  /Volumes/Project/Monkey/src/zerocoin/Params.h \
-  /Volumes/Project/Monkey/src/zerocoin/Coin.h \
-  /Volumes/Project/Monkey/src/zerocoin/Commitment.h \
-  /Volumes/Project/Monkey/src/zerocoin/Accumulator.h \
-  /Volumes/Project/Monkey/src/zerocoin/AccumulatorProofOfKnowledge.h \
-  /Volumes/Project/Monkey/src/zerocoin/CoinSpend.h \
-  /Volumes/Project/Monkey/src/zerocoin/SerialNumberSignatureOfKnowledge.h \
-  /Volumes/Project/Monkey/src/zerocoin/SpendMetaData.h \
-  /Volumes/Project/Monkey/src/zerocoin/ParamGeneration.h \
-  /Volumes/Project/Monkey/src/hashblock.h \
-  /Volumes/Project/Monkey/src/sph_blake.h \
-  /Volumes/Project/Monkey/src/sph_types.h \
-  /Volumes/Project/Monkey/src/sph_bmw.h \
-  /Volumes/Project/Monkey/src/sph_groestl.h \
-  /Volumes/Project/Monkey/src/sph_jh.h \
-  /Volumes/Project/Monkey/src/sph_keccak.h \
-  /Volumes/Project/Monkey/src/sph_skein.h \
-  /Volumes/Project/Monkey/src/sph_luffa.h \
-  /Volumes/Project/Monkey/src/sph_cubehash.h \
-  /Volumes/Project/Monkey/src/sph_shavite.h \
-  /Volumes/Project/Monkey/src/sph_simd.h \
-  /Volumes/Project/Monkey/src/sph_echo.h \
-  /Volumes/Project/Monkey/src/leveldb/include/leveldb/db.h \
-  /Volumes/Project/Monkey/src/leveldb/include/leveldb/iterator.h \
-  /Volumes/Project/Monkey/src/leveldb/include/leveldb/slice.h \
-  /Volumes/Project/Monkey/src/leveldb/include/leveldb/status.h \
-  /Volumes/Project/Monkey/src/leveldb/include/leveldb/options.h \
-  /Volumes/Project/Monkey/src/leveldb/include/leveldb/write_batch.h \
-  /Volumes/Project/Monkey/src/miner.h \
-  /Volumes/Project/Monkey/src/wallet.h \
-  /Volumes/Project/Monkey/src/ui_interface.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/scrypt.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/zerocoin/Zerocoin.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/zerocoin/Params.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/zerocoin/Coin.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/zerocoin/Commitment.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/zerocoin/Accumulator.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/zerocoin/AccumulatorProofOfKnowledge.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/zerocoin/CoinSpend.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/zerocoin/SerialNumberSignatureOfKnowledge.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/zerocoin/SpendMetaData.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/zerocoin/ParamGeneration.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/hashblock.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_blake.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_types.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_bmw.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_groestl.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_jh.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_keccak.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_skein.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_luffa.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_cubehash.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_shavite.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_simd.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_echo.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/leveldb/include/leveldb/db.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/leveldb/include/leveldb/iterator.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/leveldb/include/leveldb/slice.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/leveldb/include/leveldb/status.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/leveldb/include/leveldb/options.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/leveldb/include/leveldb/write_batch.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/miner.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/wallet.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/ui_interface.h \
   /opt/local/include/boost/signals2/last_value.hpp \
-  /Volumes/Project/Monkey/src/walletdb.h \
-  /Volumes/Project/Monkey/src/db.h /opt/local/include/db48/db_cxx.h \
-  /opt/local/include/db48/db.h /Volumes/Project/Monkey/src/base58.h \
-  /Volumes/Project/Monkey/src/kernel.h
-miner.cpp /Volumes/Project/Monkey/src/txdb.h :
-  /Volumes/Project/Monkey/src/txdb-leveldb.h :
-  /Volumes/Project/Monkey/src/main.h :
-  /Volumes/Project/Monkey/src/bignum.h :
-  /Volumes/Project/Monkey/src/serialize.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/walletdb.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/db.h \
+  /opt/local/include/db48/db_cxx.h /opt/local/include/db48/db.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/base58.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/kernel.h
+miner.cpp /Volumes/Project/Monkey-daemon-qt-build/src/txdb.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/txdb-leveldb.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/main.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/bignum.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/serialize.h :
   /opt/local/include/boost/type_traits/is_fundamental.hpp :
   /opt/local/include/boost/type_traits/is_arithmetic.hpp :
   /opt/local/include/boost/type_traits/is_integral.hpp :
@@ -1125,7 +1129,7 @@ miner.cpp /Volumes/Project/Monkey/src/txdb.h :
   /opt/local/include/boost/type_traits/remove_reference.hpp :
   /opt/local/include/boost/utility/swap.hpp :
   /opt/local/include/boost/core/swap.hpp :
-  /Volumes/Project/Monkey/src/allocators.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/allocators.h :
   /opt/local/include/boost/thread/mutex.hpp :
   /opt/local/include/boost/thread/detail/platform.hpp :
   /opt/local/include/boost/config/requires_threads.hpp :
@@ -1513,17 +1517,17 @@ miner.cpp /Volumes/Project/Monkey/src/txdb.h :
   /opt/local/include/boost/chrono/detail/system.hpp :
   /opt/local/include/boost/chrono/clock_string.hpp :
   /opt/local/include/boost/chrono/ceil.hpp :
-  /Volumes/Project/Monkey/src/version.h :
-  /Volumes/Project/Monkey/src/clientversion.h :
-  /Volumes/Project/Monkey/src/uint256.h /opt/local/include/openssl/bn.h :
-  /opt/local/include/openssl/e_os2.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/version.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/clientversion.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/uint256.h :
+  /opt/local/include/openssl/bn.h /opt/local/include/openssl/e_os2.h :
   /opt/local/include/openssl/opensslconf.h :
   /opt/local/include/openssl/ossl_typ.h :
   /opt/local/include/openssl/crypto.h /opt/local/include/openssl/stack.h :
   /opt/local/include/openssl/safestack.h :
   /opt/local/include/openssl/opensslv.h :
   /opt/local/include/openssl/symhacks.h :
-  /Volumes/Project/Monkey/src/sync.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/sync.h :
   /opt/local/include/boost/thread/recursive_mutex.hpp :
   /opt/local/include/boost/thread/pthread/recursive_mutex.hpp :
   /opt/local/include/boost/thread/locks.hpp :
@@ -1540,8 +1544,8 @@ miner.cpp /Volumes/Project/Monkey/src/txdb.h :
   /opt/local/include/boost/enable_shared_from_this.hpp :
   /opt/local/include/boost/smart_ptr/enable_shared_from_this.hpp :
   /opt/local/include/boost/smart_ptr/weak_ptr.hpp :
-  /Volumes/Project/Monkey/src/net.h /opt/local/include/boost/array.hpp :
-  /opt/local/include/boost/swap.hpp :
+  /Volumes/Project/Monkey-daemon-qt-build/src/net.h :
+  /opt/local/include/boost/array.hpp /opt/local/include/boost/swap.hpp :
   /opt/local/include/boost/detail/iterator.hpp :
   /opt/local/include/boost/foreach.hpp :
   /opt/local/include/boost/mpl/assert.hpp :
@@ -1637,12 +1641,14 @@ miner.cpp /Volumes/Project/Monkey/src/txdb.h :
   /opt/local/include/boost/type_traits/aligned_storage.hpp :
   /opt/local/include/boost/type_traits/alignment_of.hpp :
   /opt/local/include/boost/type_traits/type_with_alignment.hpp :
-  /opt/local/include/openssl/rand.h /Volumes/Project/Monkey/src/mruset.h :
-  /Volumes/Project/Monkey/src/netbase.h :
-  /Volumes/Project/Monkey/src/compat.h :
-  /Volumes/Project/Monkey/src/protocol.h :
-  /Volumes/Project/Monkey/src/addrman.h :
-  /Volumes/Project/Monkey/src/util.h /opt/local/include/boost/thread.hpp :
+  /opt/local/include/openssl/rand.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/mruset.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/netbase.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/compat.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/protocol.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/addrman.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/util.h :
+  /opt/local/include/boost/thread.hpp :
   /opt/local/include/boost/thread/thread.hpp :
   /opt/local/include/boost/thread/thread_only.hpp :
   /opt/local/include/boost/thread/detail/thread.hpp :
@@ -1864,7 +1870,7 @@ miner.cpp /Volumes/Project/Monkey/src/txdb.h :
   /opt/local/include/boost/filesystem/string_file.hpp :
   /opt/local/include/boost/filesystem/fstream.hpp :
   /opt/local/include/openssl/sha.h /opt/local/include/openssl/ripemd.h :
-  /Volumes/Project/Monkey/src/script.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/script.h :
   /opt/local/include/boost/variant.hpp :
   /opt/local/include/boost/variant/variant.hpp :
   /opt/local/include/boost/variant/detail/config.hpp :
@@ -2045,10 +2051,11 @@ miner.cpp /Volumes/Project/Monkey/src/txdb.h :
   /opt/local/include/boost/variant/detail/element_index.hpp :
   /opt/local/include/boost/variant/visitor_ptr.hpp :
   /opt/local/include/boost/variant/bad_visit.hpp :
-  /Volumes/Project/Monkey/src/keystore.h :
-  /Volumes/Project/Monkey/src/crypter.h :
-  /Volumes/Project/Monkey/src/key.h /opt/local/include/openssl/ec.h :
-  /opt/local/include/openssl/asn1.h /opt/local/include/openssl/bio.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/keystore.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/crypter.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/key.h :
+  /opt/local/include/openssl/ec.h /opt/local/include/openssl/asn1.h :
+  /opt/local/include/openssl/bio.h :
   /opt/local/include/boost/signals2/signal.hpp :
   /opt/local/include/boost/signals2/connection.hpp :
   /opt/local/include/boost/signals2/detail/auto_buffer.hpp :
@@ -2116,41 +2123,42 @@ miner.cpp /Volumes/Project/Monkey/src/txdb.h :
   /opt/local/include/boost/preprocessor/iteration/local.hpp :
   /opt/local/include/boost/preprocessor/iteration/self.hpp :
   /opt/local/include/boost/signals2/detail/signal_template.hpp :
-  /Volumes/Project/Monkey/src/scrypt.h :
-  /Volumes/Project/Monkey/src/zerocoin/Zerocoin.h :
-  /Volumes/Project/Monkey/src/zerocoin/Params.h :
-  /Volumes/Project/Monkey/src/zerocoin/Coin.h :
-  /Volumes/Project/Monkey/src/zerocoin/Commitment.h :
-  /Volumes/Project/Monkey/src/zerocoin/Accumulator.h :
-  /Volumes/Project/Monkey/src/zerocoin/AccumulatorProofOfKnowledge.h :
-  /Volumes/Project/Monkey/src/zerocoin/CoinSpend.h :
-  /Volumes/Project/Monkey/src/zerocoin/SerialNumberSignatureOfKnowledge.h :
-  /Volumes/Project/Monkey/src/zerocoin/SpendMetaData.h :
-  /Volumes/Project/Monkey/src/zerocoin/ParamGeneration.h :
-  /Volumes/Project/Monkey/src/hashblock.h :
-  /Volumes/Project/Monkey/src/sph_blake.h :
-  /Volumes/Project/Monkey/src/sph_types.h :
-  /Volumes/Project/Monkey/src/sph_bmw.h :
-  /Volumes/Project/Monkey/src/sph_groestl.h :
-  /Volumes/Project/Monkey/src/sph_jh.h :
-  /Volumes/Project/Monkey/src/sph_keccak.h :
-  /Volumes/Project/Monkey/src/sph_skein.h :
-  /Volumes/Project/Monkey/src/sph_luffa.h :
-  /Volumes/Project/Monkey/src/sph_cubehash.h :
-  /Volumes/Project/Monkey/src/sph_shavite.h :
-  /Volumes/Project/Monkey/src/sph_simd.h :
-  /Volumes/Project/Monkey/src/sph_echo.h :
-  /Volumes/Project/Monkey/src/leveldb/include/leveldb/db.h :
-  /Volumes/Project/Monkey/src/leveldb/include/leveldb/iterator.h :
-  /Volumes/Project/Monkey/src/leveldb/include/leveldb/slice.h :
-  /Volumes/Project/Monkey/src/leveldb/include/leveldb/status.h :
-  /Volumes/Project/Monkey/src/leveldb/include/leveldb/options.h :
-  /Volumes/Project/Monkey/src/leveldb/include/leveldb/write_batch.h :
-  /Volumes/Project/Monkey/src/miner.h :
-  /Volumes/Project/Monkey/src/wallet.h :
-  /Volumes/Project/Monkey/src/ui_interface.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/scrypt.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/zerocoin/Zerocoin.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/zerocoin/Params.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/zerocoin/Coin.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/zerocoin/Commitment.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/zerocoin/Accumulator.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/zerocoin/AccumulatorProofOfKnowledge.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/zerocoin/CoinSpend.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/zerocoin/SerialNumberSignatureOfKnowledge.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/zerocoin/SpendMetaData.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/zerocoin/ParamGeneration.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/hashblock.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_blake.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_types.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_bmw.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_groestl.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_jh.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_keccak.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_skein.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_luffa.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_cubehash.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_shavite.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_simd.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/sph_echo.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/leveldb/include/leveldb/db.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/leveldb/include/leveldb/iterator.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/leveldb/include/leveldb/slice.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/leveldb/include/leveldb/status.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/leveldb/include/leveldb/options.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/leveldb/include/leveldb/write_batch.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/miner.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/wallet.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/ui_interface.h :
   /opt/local/include/boost/signals2/last_value.hpp :
-  /Volumes/Project/Monkey/src/walletdb.h :
-  /Volumes/Project/Monkey/src/db.h /opt/local/include/db48/db_cxx.h :
-  /opt/local/include/db48/db.h /Volumes/Project/Monkey/src/base58.h :
-  /Volumes/Project/Monkey/src/kernel.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/walletdb.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/db.h :
+  /opt/local/include/db48/db_cxx.h /opt/local/include/db48/db.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/base58.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/kernel.h :

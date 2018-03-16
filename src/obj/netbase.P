@@ -1,5 +1,6 @@
-obj/netbase.o: netbase.cpp /Volumes/Project/Monkey/src/netbase.h \
-  /Volumes/Project/Monkey/src/serialize.h \
+obj/netbase.o: netbase.cpp \
+  /Volumes/Project/Monkey-daemon-qt-build/src/netbase.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/serialize.h \
   /opt/local/include/boost/type_traits/is_fundamental.hpp \
   /opt/local/include/boost/type_traits/is_arithmetic.hpp \
   /opt/local/include/boost/type_traits/is_integral.hpp \
@@ -44,7 +45,7 @@ obj/netbase.o: netbase.cpp /Volumes/Project/Monkey/src/netbase.h \
   /opt/local/include/boost/type_traits/remove_reference.hpp \
   /opt/local/include/boost/utility/swap.hpp \
   /opt/local/include/boost/core/swap.hpp \
-  /Volumes/Project/Monkey/src/allocators.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/allocators.h \
   /opt/local/include/boost/thread/mutex.hpp \
   /opt/local/include/boost/thread/detail/platform.hpp \
   /opt/local/include/boost/config/requires_threads.hpp \
@@ -432,11 +433,11 @@ obj/netbase.o: netbase.cpp /Volumes/Project/Monkey/src/netbase.h \
   /opt/local/include/boost/chrono/detail/system.hpp \
   /opt/local/include/boost/chrono/clock_string.hpp \
   /opt/local/include/boost/chrono/ceil.hpp \
-  /Volumes/Project/Monkey/src/version.h \
-  /Volumes/Project/Monkey/src/clientversion.h \
-  /Volumes/Project/Monkey/src/compat.h \
-  /Volumes/Project/Monkey/src/util.h \
-  /Volumes/Project/Monkey/src/uint256.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/version.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/clientversion.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/compat.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/util.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/uint256.h \
   /opt/local/include/boost/thread.hpp \
   /opt/local/include/boost/thread/thread.hpp \
   /opt/local/include/boost/thread/thread_only.hpp \
@@ -757,8 +758,9 @@ obj/netbase.o: netbase.cpp /Volumes/Project/Monkey/src/netbase.h \
   /opt/local/include/boost/filesystem/fstream.hpp \
   /opt/local/include/openssl/sha.h /opt/local/include/openssl/e_os2.h \
   /opt/local/include/openssl/opensslconf.h \
-  /opt/local/include/openssl/ripemd.h /Volumes/Project/Monkey/src/sync.h \
-  /Volumes/Project/Monkey/src/strlcpy.h \
+  /opt/local/include/openssl/ripemd.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/sync.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/strlcpy.h \
   /opt/local/include/boost/algorithm/string/case_conv.hpp \
   /opt/local/include/boost/algorithm/string/config.hpp \
   /opt/local/include/boost/iterator/transform_iterator.hpp \
@@ -822,8 +824,9 @@ obj/netbase.o: netbase.cpp /Volumes/Project/Monkey/src/netbase.h \
   /opt/local/include/boost/range/iterator_range_io.hpp \
   /opt/local/include/boost/range/detail/str_types.hpp \
   /opt/local/include/boost/algorithm/string/detail/case_conv.hpp
-netbase.cpp /Volumes/Project/Monkey/src/netbase.h :
-  /Volumes/Project/Monkey/src/serialize.h :
+netbase.cpp :
+  /Volumes/Project/Monkey-daemon-qt-build/src/netbase.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/serialize.h :
   /opt/local/include/boost/type_traits/is_fundamental.hpp :
   /opt/local/include/boost/type_traits/is_arithmetic.hpp :
   /opt/local/include/boost/type_traits/is_integral.hpp :
@@ -868,7 +871,7 @@ netbase.cpp /Volumes/Project/Monkey/src/netbase.h :
   /opt/local/include/boost/type_traits/remove_reference.hpp :
   /opt/local/include/boost/utility/swap.hpp :
   /opt/local/include/boost/core/swap.hpp :
-  /Volumes/Project/Monkey/src/allocators.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/allocators.h :
   /opt/local/include/boost/thread/mutex.hpp :
   /opt/local/include/boost/thread/detail/platform.hpp :
   /opt/local/include/boost/config/requires_threads.hpp :
@@ -1256,11 +1259,11 @@ netbase.cpp /Volumes/Project/Monkey/src/netbase.h :
   /opt/local/include/boost/chrono/detail/system.hpp :
   /opt/local/include/boost/chrono/clock_string.hpp :
   /opt/local/include/boost/chrono/ceil.hpp :
-  /Volumes/Project/Monkey/src/version.h :
-  /Volumes/Project/Monkey/src/clientversion.h :
-  /Volumes/Project/Monkey/src/compat.h :
-  /Volumes/Project/Monkey/src/util.h :
-  /Volumes/Project/Monkey/src/uint256.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/version.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/clientversion.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/compat.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/util.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/uint256.h :
   /opt/local/include/boost/thread.hpp :
   /opt/local/include/boost/thread/thread.hpp :
   /opt/local/include/boost/thread/thread_only.hpp :
@@ -1581,8 +1584,9 @@ netbase.cpp /Volumes/Project/Monkey/src/netbase.h :
   /opt/local/include/boost/filesystem/fstream.hpp :
   /opt/local/include/openssl/sha.h /opt/local/include/openssl/e_os2.h :
   /opt/local/include/openssl/opensslconf.h :
-  /opt/local/include/openssl/ripemd.h /Volumes/Project/Monkey/src/sync.h :
-  /Volumes/Project/Monkey/src/strlcpy.h :
+  /opt/local/include/openssl/ripemd.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/sync.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/strlcpy.h :
   /opt/local/include/boost/algorithm/string/case_conv.hpp :
   /opt/local/include/boost/algorithm/string/config.hpp :
   /opt/local/include/boost/iterator/transform_iterator.hpp :

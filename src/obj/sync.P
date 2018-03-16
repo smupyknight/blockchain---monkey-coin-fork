@@ -1,4 +1,4 @@
-obj/sync.o: sync.cpp /Volumes/Project/Monkey/src/sync.h \
+obj/sync.o: sync.cpp /Volumes/Project/Monkey-daemon-qt-build/src/sync.h \
   /opt/local/include/boost/thread/mutex.hpp \
   /opt/local/include/boost/thread/detail/platform.hpp \
   /opt/local/include/boost/config.hpp \
@@ -435,8 +435,8 @@ obj/sync.o: sync.cpp /Volumes/Project/Monkey/src/sync.h \
   /opt/local/include/boost/enable_shared_from_this.hpp \
   /opt/local/include/boost/smart_ptr/enable_shared_from_this.hpp \
   /opt/local/include/boost/smart_ptr/weak_ptr.hpp \
-  /Volumes/Project/Monkey/src/util.h \
-  /Volumes/Project/Monkey/src/uint256.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/util.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/uint256.h \
   /opt/local/include/boost/thread.hpp \
   /opt/local/include/boost/thread/thread.hpp \
   /opt/local/include/boost/thread/thread_only.hpp \
@@ -753,12 +753,12 @@ obj/sync.o: sync.cpp /Volumes/Project/Monkey/src/sync.h \
   /opt/local/include/openssl/sha.h /opt/local/include/openssl/e_os2.h \
   /opt/local/include/openssl/opensslconf.h \
   /opt/local/include/openssl/ripemd.h \
-  /Volumes/Project/Monkey/src/netbase.h \
-  /Volumes/Project/Monkey/src/serialize.h \
-  /Volumes/Project/Monkey/src/allocators.h \
-  /Volumes/Project/Monkey/src/version.h \
-  /Volumes/Project/Monkey/src/clientversion.h \
-  /Volumes/Project/Monkey/src/compat.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/netbase.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/serialize.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/allocators.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/version.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/clientversion.h \
+  /Volumes/Project/Monkey-daemon-qt-build/src/compat.h \
   /opt/local/include/boost/foreach.hpp \
   /opt/local/include/boost/range/end.hpp \
   /opt/local/include/boost/range/detail/implementation_help.hpp \
@@ -773,7 +773,7 @@ obj/sync.o: sync.cpp /Volumes/Project/Monkey/src/sync.h \
   /opt/local/include/boost/foreach_fwd.hpp \
   /opt/local/include/boost/aligned_storage.hpp \
   /opt/local/include/boost/type_traits/aligned_storage.hpp
-sync.cpp /Volumes/Project/Monkey/src/sync.h :
+sync.cpp /Volumes/Project/Monkey-daemon-qt-build/src/sync.h :
   /opt/local/include/boost/thread/mutex.hpp :
   /opt/local/include/boost/thread/detail/platform.hpp :
   /opt/local/include/boost/config.hpp :
@@ -1210,8 +1210,8 @@ sync.cpp /Volumes/Project/Monkey/src/sync.h :
   /opt/local/include/boost/enable_shared_from_this.hpp :
   /opt/local/include/boost/smart_ptr/enable_shared_from_this.hpp :
   /opt/local/include/boost/smart_ptr/weak_ptr.hpp :
-  /Volumes/Project/Monkey/src/util.h :
-  /Volumes/Project/Monkey/src/uint256.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/util.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/uint256.h :
   /opt/local/include/boost/thread.hpp :
   /opt/local/include/boost/thread/thread.hpp :
   /opt/local/include/boost/thread/thread_only.hpp :
@@ -1528,12 +1528,12 @@ sync.cpp /Volumes/Project/Monkey/src/sync.h :
   /opt/local/include/openssl/sha.h /opt/local/include/openssl/e_os2.h :
   /opt/local/include/openssl/opensslconf.h :
   /opt/local/include/openssl/ripemd.h :
-  /Volumes/Project/Monkey/src/netbase.h :
-  /Volumes/Project/Monkey/src/serialize.h :
-  /Volumes/Project/Monkey/src/allocators.h :
-  /Volumes/Project/Monkey/src/version.h :
-  /Volumes/Project/Monkey/src/clientversion.h :
-  /Volumes/Project/Monkey/src/compat.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/netbase.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/serialize.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/allocators.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/version.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/clientversion.h :
+  /Volumes/Project/Monkey-daemon-qt-build/src/compat.h :
   /opt/local/include/boost/foreach.hpp :
   /opt/local/include/boost/range/end.hpp :
   /opt/local/include/boost/range/detail/implementation_help.hpp :
