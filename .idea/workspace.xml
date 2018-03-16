@@ -2,74 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6f470e2-4596-4074-a131-1e177f8aa919" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/bitcoinrpc.cpp" afterPath="$PROJECT_DIR$/src/bitcoinrpc.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/obj/addrman.P" afterPath="$PROJECT_DIR$/src/obj/addrman.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/addrman.o" afterPath="$PROJECT_DIR$/src/obj/addrman.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/alert.P" afterPath="$PROJECT_DIR$/src/obj/alert.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/alert.o" afterPath="$PROJECT_DIR$/src/obj/alert.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/bitcoinrpc.P" afterPath="$PROJECT_DIR$/src/obj/bitcoinrpc.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/bitcoinrpc.o" afterPath="$PROJECT_DIR$/src/obj/bitcoinrpc.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/checkpoints.P" afterPath="$PROJECT_DIR$/src/obj/checkpoints.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/checkpoints.o" afterPath="$PROJECT_DIR$/src/obj/checkpoints.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/crypter.P" afterPath="$PROJECT_DIR$/src/obj/crypter.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/crypter.o" afterPath="$PROJECT_DIR$/src/obj/crypter.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/db.P" afterPath="$PROJECT_DIR$/src/obj/db.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/db.o" afterPath="$PROJECT_DIR$/src/obj/db.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/init.P" afterPath="$PROJECT_DIR$/src/obj/init.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/init.o" afterPath="$PROJECT_DIR$/src/obj/init.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/irc.P" afterPath="$PROJECT_DIR$/src/obj/irc.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/irc.o" afterPath="$PROJECT_DIR$/src/obj/irc.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/kernel.P" afterPath="$PROJECT_DIR$/src/obj/kernel.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/kernel.o" afterPath="$PROJECT_DIR$/src/obj/kernel.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/key.P" afterPath="$PROJECT_DIR$/src/obj/key.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/key.o" afterPath="$PROJECT_DIR$/src/obj/key.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/keystore.P" afterPath="$PROJECT_DIR$/src/obj/keystore.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/keystore.o" afterPath="$PROJECT_DIR$/src/obj/keystore.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/main.P" afterPath="$PROJECT_DIR$/src/obj/main.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/main.o" afterPath="$PROJECT_DIR$/src/obj/main.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/miner.P" afterPath="$PROJECT_DIR$/src/obj/miner.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/miner.o" afterPath="$PROJECT_DIR$/src/obj/miner.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/net.P" afterPath="$PROJECT_DIR$/src/obj/net.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/net.o" afterPath="$PROJECT_DIR$/src/obj/net.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/netbase.P" afterPath="$PROJECT_DIR$/src/obj/netbase.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/netbase.o" afterPath="$PROJECT_DIR$/src/obj/netbase.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/noui.P" afterPath="$PROJECT_DIR$/src/obj/noui.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/noui.o" afterPath="$PROJECT_DIR$/src/obj/noui.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/pbkdf2.P" afterPath="$PROJECT_DIR$/src/obj/pbkdf2.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/pbkdf2.o" afterPath="$PROJECT_DIR$/src/obj/pbkdf2.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/protocol.P" afterPath="$PROJECT_DIR$/src/obj/protocol.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/protocol.o" afterPath="$PROJECT_DIR$/src/obj/protocol.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/rpcblockchain.P" afterPath="$PROJECT_DIR$/src/obj/rpcblockchain.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/rpcblockchain.o" afterPath="$PROJECT_DIR$/src/obj/rpcblockchain.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/rpcdump.P" afterPath="$PROJECT_DIR$/src/obj/rpcdump.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/rpcdump.o" afterPath="$PROJECT_DIR$/src/obj/rpcdump.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/rpcmining.P" afterPath="$PROJECT_DIR$/src/obj/rpcmining.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/rpcmining.o" afterPath="$PROJECT_DIR$/src/obj/rpcmining.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/rpcnet.P" afterPath="$PROJECT_DIR$/src/obj/rpcnet.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/rpcnet.o" afterPath="$PROJECT_DIR$/src/obj/rpcnet.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/rpcrawtransaction.P" afterPath="$PROJECT_DIR$/src/obj/rpcrawtransaction.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/rpcrawtransaction.o" afterPath="$PROJECT_DIR$/src/obj/rpcrawtransaction.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/rpcwallet.P" afterPath="$PROJECT_DIR$/src/obj/rpcwallet.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/rpcwallet.o" afterPath="$PROJECT_DIR$/src/obj/rpcwallet.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/script.P" afterPath="$PROJECT_DIR$/src/obj/script.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/script.o" afterPath="$PROJECT_DIR$/src/obj/script.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/scrypt.P" afterPath="$PROJECT_DIR$/src/obj/scrypt.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/scrypt.o" afterPath="$PROJECT_DIR$/src/obj/scrypt.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/sync.P" afterPath="$PROJECT_DIR$/src/obj/sync.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/sync.o" afterPath="$PROJECT_DIR$/src/obj/sync.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/txdb-leveldb.P" afterPath="$PROJECT_DIR$/src/obj/txdb-leveldb.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/txdb-leveldb.o" afterPath="$PROJECT_DIR$/src/obj/txdb-leveldb.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/util.P" afterPath="$PROJECT_DIR$/src/obj/util.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/util.o" afterPath="$PROJECT_DIR$/src/obj/util.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/version.P" afterPath="$PROJECT_DIR$/src/obj/version.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/version.o" afterPath="$PROJECT_DIR$/src/obj/version.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/wallet.P" afterPath="$PROJECT_DIR$/src/obj/wallet.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/wallet.o" afterPath="$PROJECT_DIR$/src/obj/wallet.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/walletdb.P" afterPath="$PROJECT_DIR$/src/obj/walletdb.P" />
-      <change beforePath="$PROJECT_DIR$/src/obj/walletdb.o" afterPath="$PROJECT_DIR$/src/obj/walletdb.o" />
-      <change beforePath="$PROJECT_DIR$/src/protocol.h" afterPath="$PROJECT_DIR$/src/protocol.h" />
-      <change beforePath="$PROJECT_DIR$/src/wallet.cpp" afterPath="$PROJECT_DIR$/src/wallet.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -84,21 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="net.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net.cpp">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19305">
-              <caret line="1287" column="36" lean-forward="false" selection-start-line="1287" selection-start-column="36" selection-end-line="1287" selection-end-column="36" />
+            <state relative-caret-position="312">
+              <caret line="2578" column="36" lean-forward="false" selection-start-line="2578" selection-start-column="36" selection-end-line="2578" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <file leaf-file-name="base58.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/base58.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36090">
-              <caret line="2406" column="9" lean-forward="false" selection-start-line="2406" selection-start-column="9" selection-end-line="2406" selection-end-column="9" />
+            <state relative-caret-position="-616">
+              <caret line="145" column="21" lean-forward="true" selection-start-line="145" selection-start-column="21" selection-end-line="145" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -154,11 +87,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="protocol.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="protocol.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/protocol.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
               <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -222,12 +165,12 @@
         <option value="$PROJECT_DIR$/src/makefile.osx" />
         <option value="$PROJECT_DIR$/monkey-qt.pro" />
         <option value="$PROJECT_DIR$/src/net.cpp" />
-        <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/miner.cpp" />
         <option value="$PROJECT_DIR$/src/rpcmining.cpp" />
         <option value="$PROJECT_DIR$/src/wallet.cpp" />
         <option value="$PROJECT_DIR$/src/bitcoinrpc.cpp" />
         <option value="$PROJECT_DIR$/src/protocol.h" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
       </list>
     </option>
   </component>
@@ -239,7 +182,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="849" />
+    <option name="x" value="790" />
     <option name="width" value="1071" />
     <option name="height" value="1006" />
   </component>
@@ -402,12 +345,12 @@
       <workItem from="1520881737059" duration="1625000" />
       <workItem from="1520923856874" duration="20248000" />
       <workItem from="1521045771598" duration="974000" />
-      <workItem from="1521209447680" duration="231000" />
+      <workItem from="1521209447680" duration="1931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52198000" />
+    <option name="totallyTimeSpent" value="53898000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -419,9 +362,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="849" y="0" width="1071" height="1006" extended-state="0" />
+    <frame x="790" y="0" width="1071" height="1006" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34733894" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24463119" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -430,7 +374,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3522484" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34582442" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -462,20 +406,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/makefile.bsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/makefile.mingw">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/makefile.linux-mingw">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -758,14 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36090">
-          <caret line="2406" column="9" lean-forward="false" selection-start-line="2406" selection-start-column="9" selection-end-line="2406" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/miner.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8490">
@@ -818,6 +740,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base58.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-616">
+          <caret line="145" column="21" lean-forward="true" selection-start-line="145" selection-start-column="21" selection-end-line="145" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="2578" column="36" lean-forward="false" selection-start-line="2578" selection-start-column="36" selection-end-line="2578" selection-end-column="36" />
           <folding />
         </state>
       </provider>
