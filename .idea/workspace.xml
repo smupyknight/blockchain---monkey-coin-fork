@@ -4,7 +4,6 @@
     <list default="true" id="cd2f3f2a-9807-41c5-be09-eac92f4fe97e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/main.h" afterPath="$PROJECT_DIR$/src/main.h" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,17 +74,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="2578" column="30" lean-forward="false" selection-start-line="2578" selection-start-column="30" selection-end-line="2578" selection-end-column="30" />
+            <state relative-caret-position="115">
+              <caret line="2563" column="32" lean-forward="false" selection-start-line="2563" selection-start-column="32" selection-end-line="2563" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="387">
@@ -134,8 +133,8 @@
         <option value="$PROJECT_DIR$/src/protocol.h" />
         <option value="$PROJECT_DIR$/src/clientversion.h" />
         <option value="$PROJECT_DIR$/src/alert.cpp" />
-        <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/main.h" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
       </list>
     </option>
   </component>
@@ -216,12 +215,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521275396461</updated>
-      <workItem from="1521275398637" duration="2302000" />
+      <workItem from="1521275398637" duration="2417000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2302000" />
+    <option name="totallyTimeSpent" value="2417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="780" y="0" width="1071" height="1006" extended-state="0" />
@@ -315,18 +314,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="2578" column="30" lean-forward="false" selection-start-line="2578" selection-start-column="30" selection-end-line="2578" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
           <caret line="54" column="48" lean-forward="false" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="2563" column="32" lean-forward="false" selection-start-line="2563" selection-start-column="32" selection-end-line="2563" selection-end-column="32" />
           <folding />
         </state>
       </provider>
