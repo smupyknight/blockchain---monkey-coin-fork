@@ -447,60 +447,33 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     if(!pblock->IsProofOfWork())
         return error("CheckWork() : %s is not a proof-of-work block", hashBlock.GetHex().c_str());
 
-    //if (hashBlock > hashTarget)
-    //    return error("CheckWork() : proof-of-work not meeting target");
+    if (hashBlock > hashTarget)
+        return error("CheckWork() : proof-of-work not meeting target");
 
-    if (hashBlock <= hashTarget) {
-        //// debug print
-        printf("CheckWork() : new proof-of-work block found  \n  hash: %s  \ntarget: %s\n", hashBlock.GetHex().c_str(), hashTarget.GetHex().c_str());
-        pblock->print();
-        printf("generated %s\n", FormatMoney(pblock->vtx[0].vout[0].nValue).c_str());
+    //// debug print
+    printf("CheckWork() : new proof-of-work block found  \n  hash: %s  \ntarget: %s\n", hashBlock.GetHex().c_str(), hashTarget.GetHex().c_str());
+    pblock->print();
+    printf("generated %s\n", FormatMoney(pblock->vtx[0].vout[0].nValue).c_str());
 
-        // Found a solution
+    // Found a solution
+    {
+        LOCK(cs_main);
+        if (pblock->hashPrevBlock != hashBestChain)
+            return error("CheckWork() : generated block is stale");
+
+        // Remove key from key pool
+        reservekey.KeepKey();
+
+        // Track how many getdata requests this block gets
         {
-            LOCK(cs_main);
-            if (pblock->hashPrevBlock != hashBestChain)
-                return error("CheckWork() : generated block is stale");
-
-            // Remove key from key pool
-            reservekey.KeepKey();
-
-            // Track how many getdata requests this block gets
-            {
-                LOCK(wallet.cs_wallet);
-                wallet.mapRequestCount[hashBlock] = 0;
-            }
-
-            // Process this block the same as if we had received it from another node
-            if (!ProcessBlock(NULL, pblock))
-                return error("CheckWork() : ProcessBlock, block not accepted");
+            LOCK(wallet.cs_wallet);
+            wallet.mapRequestCount[hashBlock] = 0;
         }
-    }
 
-//    //// debug print
-//    printf("CheckWork() : new proof-of-work block found  \n  hash: %s  \ntarget: %s\n", hashBlock.GetHex().c_str(), hashTarget.GetHex().c_str());
-//    pblock->print();
-//    printf("generated %s\n", FormatMoney(pblock->vtx[0].vout[0].nValue).c_str());
-//
-//    // Found a solution
-//    {
-//        LOCK(cs_main);
-//        if (pblock->hashPrevBlock != hashBestChain)
-//            return error("CheckWork() : generated block is stale");
-//
-//        // Remove key from key pool
-//        reservekey.KeepKey();
-//
-//        // Track how many getdata requests this block gets
-//        {
-//            LOCK(wallet.cs_wallet);
-//            wallet.mapRequestCount[hashBlock] = 0;
-//        }
-//
-//        // Process this block the same as if we had received it from another node
-//        if (!ProcessBlock(NULL, pblock))
-//            return error("CheckWork() : ProcessBlock, block not accepted");
-//    }
+        // Process this block the same as if we had received it from another node
+        if (!ProcessBlock(NULL, pblock))
+            return error("CheckWork() : ProcessBlock, block not accepted");
+    }
 
     return true;
 }
@@ -618,37 +591,27 @@ void WorkMiner(CWallet *pwallet)
         if (fShutdown)
             return;
 
-//        while (pwallet->IsLocked())
-//        {
-//            MilliSleep(1000);
-//            if (fShutdown)
-//                return;
-//        }
-//
-//        while (vNodes.empty() || IsInitialBlockDownload())
-//        {
-//            fTryToSync = true;
-//            MilliSleep(1000);
-//            if (fShutdown)
-//                return;
-//        }
-//
-//        if (fTryToSync)
-//        {
-//            fTryToSync = false;
-//            if (vNodes.size() < 3 || nBestHeight < GetNumBlocksOfPeers())
-//            {
-//                MilliSleep(60000);
-//                continue;
-//            }
-//        }
-
-        //
-        // Create new block
-        //
         int64_t nFees;
         auto_ptr<CBlock> pblock(CreateNewBlock(pwallet, false, &nFees));
         CReserveKey reservekey(pwallet);
+
+        // This will figure out a valid hash and Nonce if you're
+        // creating a different genesis block:
+        uint256 hashTarget = CBigNum().SetCompact(pblock->nBits).getuint256();
+        uint256 hash = pblock->GetHash();
+        const char* pszTimestamp = "https://news.bitcoin.com/large-glassware-plant-in-siberia-to-mine-bitcoin/";
+        pblock->vtx[0].vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
+        pblock->hashMerkleRoot = pblock->BuildMerkleTree();
+        while (hash > hashTarget)
+        {
+            ++pblock->nNonce;
+            if (pblock->nNonce == 0)
+            {
+                printf("NONCE WRAPPED, incrementing time");
+                ++pblock->nTime;
+            }
+            hash = pblock->GetHash();
+        }
         if (!pblock.get())
             return;
 

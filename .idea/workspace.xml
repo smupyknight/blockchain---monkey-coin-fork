@@ -7,7 +7,6 @@
       <change beforePath="$PROJECT_DIR$/src/miner.cpp" afterPath="$PROJECT_DIR$/src/miner.cpp" />
       <change beforePath="$PROJECT_DIR$/src/obj/main.o" afterPath="$PROJECT_DIR$/src/obj/main.o" />
       <change beforePath="$PROJECT_DIR$/src/obj/miner.o" afterPath="$PROJECT_DIR$/src/obj/miner.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/net.o" afterPath="$PROJECT_DIR$/src/obj/net.o" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,9 +20,11 @@
       <file leaf-file-name="miner.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/miner.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="444" column="72" lean-forward="false" selection-start-line="444" selection-start-column="72" selection-end-line="444" selection-end-column="72" />
-              <folding />
+            <state relative-caret-position="107">
+              <caret line="584" column="26" lean-forward="false" selection-start-line="584" selection-start-column="26" selection-end-line="584" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#21367#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -31,8 +32,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="486" column="39" lean-forward="false" selection-start-line="486" selection-start-column="39" selection-end-line="486" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -41,8 +42,8 @@
       <file leaf-file-name="kernel.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kernel.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+            <state relative-caret-position="176">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,36 +123,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getblockvalue</find>
-      <find>ntargetspacing</find>
-      <find>dnsseed</find>
+      <find>coin</find>
+      <find>getwork</find>
+      <find>workminer</find>
       <find>nsubsidy</find>
-      <find>hashmerklero</find>
-      <find>block.hashmerkleroot</find>
-      <find>proof of work</find>
-      <find>performing wall</find>
-      <find>wallet requires newer version of monkey</find>
-      <find>getblocks</find>
-      <find>miner</find>
-      <find>proof of w</find>
-      <find>proof of work called</find>
-      <find>stakeminer</find>
-      <find>checkstake</find>
-      <find>nLastCoinStakeSearchInterval</find>
-      <find>THREAD_STAKE_MINER</find>
-      <find>-staking</find>
-      <find>getboolarg</find>
-      <find>not meeting</find>
-      <find>ToString</find>
-      <find>proof of work call</find>
       <find>getproofofworkreward</find>
-      <find>loadblockindex</find>
-      <find>mapStakeModifierCheckpointsTestNet</find>
-      <find>proof of work cal</find>
-      <find>CreateNewBlock</find>
+      <find>i think it's genesis block</find>
+      <find>coinbase script size</find>
       <find>checkwork</find>
-      <find>nbits</find>
-      <find>uint256(0)</find>
+      <find>ProcessBlock</find>
+      <find>CHECKTRANS</find>
+      <find>scriptsig</find>
+      <find>checktransaction failed</find>
+      <find>mapcheckpoints</find>
+      <find>pr</find>
+      <find>createnewblock</find>
+      <find>hashmerkleroot mi</find>
+      <find>checktransaction</find>
+      <find>checkblock failed</find>
+      <find>hashmerkleroot mismatch</find>
+      <find>hashMerkleRoot</find>
+      <find>check tr</find>
+      <find>proof-of-work not</find>
+      <find>proof of</find>
+      <find>loadblockindex</find>
+      <find>checkblock</find>
+      <find>loadblockinde</find>
+      <find>block height mi</find>
+      <find>class cblock</find>
+      <find>block height m</find>
+      <find>scriptSig.size() &lt; 0</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -185,8 +186,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="366" />
-    <option name="y" value="3" />
+    <option name="x" value="19" />
     <option name="width" value="1071" />
     <option name="height" value="1006" />
   </component>
@@ -255,22 +255,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521275396461</updated>
-      <workItem from="1521275398637" duration="14228000" />
+      <workItem from="1521275398637" duration="23806000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14228000" />
+    <option name="totallyTimeSpent" value="23806000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="366" y="3" width="1071" height="1006" extended-state="0" />
-    <editor active="true" />
+    <frame x="19" y="0" width="1071" height="1006" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.273326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3358946" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24975705" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -370,22 +369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/checkpoints.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kernel.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/protocol.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -402,10 +385,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net.cpp">
+    <entry file="file://$PROJECT_DIR$/src/miner.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="1871" column="0" lean-forward="false" selection-start-line="1871" selection-start-column="0" selection-end-line="1871" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -418,26 +401,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/miner.h">
+    <entry file="file://$PROJECT_DIR$/src/net.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="729">
+          <caret line="1871" column="0" lean-forward="false" selection-start-line="1871" selection-start-column="0" selection-end-line="1871" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/checkpoints.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kernel.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/miner.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="444" column="72" lean-forward="false" selection-start-line="444" selection-start-column="72" selection-end-line="444" selection-end-column="72" />
-          <folding />
+        <state relative-caret-position="107">
+          <caret line="584" column="26" lean-forward="false" selection-start-line="584" selection-start-column="26" selection-end-line="584" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#21367#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="486" column="39" lean-forward="false" selection-start-line="486" selection-start-column="39" selection-end-line="486" selection-end-column="39" />
           <folding />
         </state>
       </provider>
