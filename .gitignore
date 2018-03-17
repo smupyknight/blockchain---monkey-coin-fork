@@ -1,6 +1,6 @@
 # temporary build files
 build
-*.p
+src/obj
 monkey-Qt.app
 Monkey-qt*
 monkeyd
