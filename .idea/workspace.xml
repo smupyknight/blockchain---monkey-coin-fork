@@ -2,36 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd2f3f2a-9807-41c5-be09-eac92f4fe97e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/checkpoints.cpp" afterPath="$PROJECT_DIR$/src/checkpoints.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/kernel.cpp" afterPath="$PROJECT_DIR$/src/kernel.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/main.h" afterPath="$PROJECT_DIR$/src/main.h" />
-      <change beforePath="$PROJECT_DIR$/src/miner.cpp" afterPath="$PROJECT_DIR$/src/miner.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/net.cpp" afterPath="$PROJECT_DIR$/src/net.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/net.h" afterPath="$PROJECT_DIR$/src/net.h" />
-      <change beforePath="$PROJECT_DIR$/src/obj/addrman.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/obj/alert.o" afterPath="$PROJECT_DIR$/src/obj/alert.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/bitcoinrpc.o" afterPath="$PROJECT_DIR$/src/obj/bitcoinrpc.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/checkpoints.o" afterPath="$PROJECT_DIR$/src/obj/checkpoints.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/db.o" afterPath="$PROJECT_DIR$/src/obj/db.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/init.o" afterPath="$PROJECT_DIR$/src/obj/init.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/kernel.o" afterPath="$PROJECT_DIR$/src/obj/kernel.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/main.o" afterPath="$PROJECT_DIR$/src/obj/main.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/miner.o" afterPath="$PROJECT_DIR$/src/obj/miner.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/net.o" afterPath="$PROJECT_DIR$/src/obj/net.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/noui.o" afterPath="$PROJECT_DIR$/src/obj/noui.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/rpcblockchain.o" afterPath="$PROJECT_DIR$/src/obj/rpcblockchain.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/rpcdump.o" afterPath="$PROJECT_DIR$/src/obj/rpcdump.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/rpcmining.o" afterPath="$PROJECT_DIR$/src/obj/rpcmining.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/rpcnet.o" afterPath="$PROJECT_DIR$/src/obj/rpcnet.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/rpcrawtransaction.o" afterPath="$PROJECT_DIR$/src/obj/rpcrawtransaction.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/rpcwallet.o" afterPath="$PROJECT_DIR$/src/obj/rpcwallet.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/script.o" afterPath="$PROJECT_DIR$/src/obj/script.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/txdb-leveldb.o" afterPath="$PROJECT_DIR$/src/obj/txdb-leveldb.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/wallet.o" afterPath="$PROJECT_DIR$/src/obj/wallet.o" />
-      <change beforePath="$PROJECT_DIR$/src/obj/walletdb.o" afterPath="$PROJECT_DIR$/src/obj/walletdb.o" />
+      <change beforePath="$PROJECT_DIR$/src/protocol.h" afterPath="$PROJECT_DIR$/src/protocol.h" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,16 +24,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bitcoin_zh_TW.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/qt/locale/bitcoin_zh_TW.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="3161" column="20" lean-forward="false" selection-start-line="3161" selection-start-column="20" selection-end-line="3161" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="miner.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/miner.cpp">
           <provider selected="true" editor-type-id="text-editor">
@@ -75,18 +37,18 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="38850">
               <caret line="2590" column="26" lean-forward="false" selection-start-line="2590" selection-start-column="26" selection-end-line="2590" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kernel.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="kernel.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kernel.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="311">
-              <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+              <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -135,8 +97,18 @@
       <file leaf-file-name="main.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
+            <state relative-caret-position="753">
               <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="protocol.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/protocol.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -186,7 +158,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/makefile.osx" />
         <option value="$PROJECT_DIR$/src/bitcoinrpc.cpp" />
-        <option value="$PROJECT_DIR$/src/protocol.h" />
         <option value="$PROJECT_DIR$/src/alert.cpp" />
         <option value="$PROJECT_DIR$/src/clientversion.h" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -198,6 +169,7 @@
         <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/checkpoints.cpp" />
         <option value="$PROJECT_DIR$/src/kernel.cpp" />
+        <option value="$PROJECT_DIR$/src/protocol.h" />
       </list>
     </option>
   </component>
@@ -279,12 +251,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521275396461</updated>
-      <workItem from="1521275398637" duration="11550000" />
+      <workItem from="1521275398637" duration="12254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11550000" />
+    <option name="totallyTimeSpent" value="12254000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="801" y="3" width="1071" height="1006" extended-state="0" />
@@ -334,14 +306,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="44" column="56" lean-forward="false" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/protocol.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -410,14 +374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -442,18 +398,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/kernel.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="38850">
           <caret line="2590" column="26" lean-forward="false" selection-start-line="2590" selection-start-column="26" selection-end-line="2590" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kernel.cpp">
+    <entry file="file://$PROJECT_DIR$/src/main.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        <state relative-caret-position="753">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/protocol.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
           <folding />
         </state>
       </provider>
