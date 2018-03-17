@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd2f3f2a-9807-41c5-be09-eac92f4fe97e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/alert.cpp" afterPath="$PROJECT_DIR$/src/alert.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/main.h" afterPath="$PROJECT_DIR$/src/main.h" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,18 +77,28 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="2696" column="23" lean-forward="false" selection-start-line="2696" selection-start-column="23" selection-end-line="2696" selection-end-column="23" />
+            <state relative-caret-position="285">
+              <caret line="2601" column="50" lean-forward="false" selection-start-line="2601" selection-start-column="50" selection-end-line="2601" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alert.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="53" column="38" lean-forward="true" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alert.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/alert.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="24" column="165" lean-forward="true" selection-start-line="24" selection-start-column="165" selection-end-line="24" selection-end-column="165" />
+            <state relative-caret-position="96">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -105,6 +116,8 @@
       <find>pchmessagestart[4] =</find>
       <find>pszMainKey</find>
       <find>mainkey</find>
+      <find>hashGenesisBlock</find>
+      <find>merkleroot</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -118,8 +131,9 @@
         <option value="$PROJECT_DIR$/src/bitcoinrpc.cpp" />
         <option value="$PROJECT_DIR$/src/protocol.h" />
         <option value="$PROJECT_DIR$/src/clientversion.h" />
-        <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/alert.cpp" />
+        <option value="$PROJECT_DIR$/src/main.h" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
       </list>
     </option>
   </component>
@@ -200,12 +214,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521275396461</updated>
-      <workItem from="1521275398637" duration="2075000" />
+      <workItem from="1521275398637" duration="2179000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2075000" />
+    <option name="totallyTimeSpent" value="2179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="822" y="0" width="1071" height="1006" extended-state="0" />
@@ -291,18 +305,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+    <entry file="file://$PROJECT_DIR$/src/alert.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="2696" column="23" lean-forward="false" selection-start-line="2696" selection-start-column="23" selection-end-line="2696" selection-end-column="23" />
+        <state relative-caret-position="96">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/alert.cpp">
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="24" column="165" lean-forward="true" selection-start-line="24" selection-start-column="165" selection-end-line="24" selection-end-column="165" />
+        <state relative-caret-position="285">
+          <caret line="2601" column="50" lean-forward="false" selection-start-line="2601" selection-start-column="50" selection-end-line="2601" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="53" column="38" lean-forward="true" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
           <folding />
         </state>
       </provider>
