@@ -1285,6 +1285,26 @@ void static ThreadStakeMiner(void* parg)
     printf("ThreadStakeMiner exiting, %d threads remaining\n", vnThreadsRunning[THREAD_STAKE_MINER]);
 }
 
+void static ThreadWorkMiner(void* parg)
+{
+    printf("ThreadWorkMiner started\n");
+    CWallet* pwallet = (CWallet*)parg;
+    try
+    {
+        vnThreadsRunning[THREAD_WORK_MINER]++;
+        WorkMiner(pwallet);
+        vnThreadsRunning[THREAD_WORK_MINER]--;
+    }
+    catch (std::exception& e) {
+        vnThreadsRunning[THREAD_WORK_MINER]--;
+        PrintException(&e, "ThreadWorkMiner()");
+    } catch (...) {
+        vnThreadsRunning[THREAD_WORK_MINER]--;
+        PrintException(NULL, "ThreadWorkMiner()");
+    }
+    printf("ThreadWorkMiner exiting, %d threads remaining\n", vnThreadsRunning[THREAD_WORK_MINER]);
+}
+
 void ThreadOpenConnections2(void* parg)
 {
     printf("ThreadOpenConnections started\n");
@@ -1849,6 +1869,13 @@ void StartNode(void* parg)
     else
         if (!NewThread(ThreadStakeMiner, pwalletMain))
             printf("Error: NewThread(ThreadStakeMiner) failed\n");
+
+    // Mine proof-of-work blocks in the background
+    if (!GetBoolArg("-pow", false))
+        printf("Working disabled\n");
+    else
+        if (!NewThread(ThreadWorkMiner, pwalletMain))
+            printf("Error: NewThread(ThreadWorkMiner) failed\n");
 }
 
 bool StopNode()
@@ -1883,6 +1910,7 @@ bool StopNode()
     if (vnThreadsRunning[THREAD_ADDEDCONNECTIONS] > 0) printf("ThreadOpenAddedConnections still running\n");
     if (vnThreadsRunning[THREAD_DUMPADDRESS] > 0) printf("ThreadDumpAddresses still running\n");
     if (vnThreadsRunning[THREAD_STAKE_MINER] > 0) printf("ThreadStakeMiner still running\n");
+    if (vnThreadsRunning[THREAD_WORK_MINER] > 0) printf("ThreadWorkMiner still running\n");
     while (vnThreadsRunning[THREAD_MESSAGEHANDLER] > 0 || vnThreadsRunning[THREAD_RPCHANDLER] > 0)
         MilliSleep(20);
     MilliSleep(50);

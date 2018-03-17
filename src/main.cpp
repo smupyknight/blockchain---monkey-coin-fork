@@ -951,7 +951,7 @@ uint256 WantedByOrphan(const CBlock* pblockOrphan)
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
-    printf("Proof of Work Called");
+    printf("Proof of Work Called\n");
 	int64_t nSubsidy = 1 * COIN;
 
 	if(pindexBest->nHeight < 1)
@@ -2578,7 +2578,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nNonce   = 548449;
 		if(fTestNet)
         {
-            block.nNonce   = 548449;
+            block.nNonce   = 577706;
         }
         if (true && block.GetHash() != (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet)) {
             printf("Searching for genesis block...\n");

@@ -439,9 +439,9 @@ void FormatHashBuffers(CBlock* pblock, char* pmidstate, char* pdata, char* phash
     memcpy(phash1, &tmp.hash1, 64);
 }
 
-
 bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
 {
+    printf("%s\n", pblock->GetHash().ToString().c_str());
     uint256 hashBlock = pblock->GetHash();
     uint256 hashTarget = CBigNum().SetCompact(pblock->nBits).getuint256();
 
@@ -575,5 +575,59 @@ void StakeMiner(CWallet *pwallet)
         }
         else
             MilliSleep(nMinerSleep);
+    }
+}
+
+void WorkMiner(CWallet *pwallet)
+{
+    SetThreadPriority(THREAD_PRIORITY_LOWEST);
+
+    // Make this thread recognisable as the mining thread
+    RenameThread("monkey-work-miner");
+
+    bool fTryToSync = true;
+
+    while (true)
+    {
+        if (fShutdown)
+            return;
+
+        while (pwallet->IsLocked())
+        {
+            MilliSleep(1000);
+            if (fShutdown)
+                return;
+        }
+
+        while (vNodes.empty() || IsInitialBlockDownload())
+        {
+            fTryToSync = true;
+            MilliSleep(1000);
+            if (fShutdown)
+                return;
+        }
+
+        if (fTryToSync)
+        {
+            fTryToSync = false;
+            if (vNodes.size() < 3 || nBestHeight < GetNumBlocksOfPeers())
+            {
+                MilliSleep(60000);
+                continue;
+            }
+        }
+
+        //
+        // Create new block
+        //
+        int64_t nFees;
+        auto_ptr<CBlock> pblock(CreateNewBlock(pwallet, false, &nFees));
+        CReserveKey reservekey(pwallet);
+        if (!pblock.get())
+            return;
+
+        SetThreadPriority(THREAD_PRIORITY_NORMAL);
+        CheckWork(pblock.get(), *pwallet, reservekey);
+        SetThreadPriority(THREAD_PRIORITY_LOWEST);
     }
 }
