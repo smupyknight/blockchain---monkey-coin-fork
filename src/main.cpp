@@ -2530,9 +2530,9 @@ bool LoadBlockIndex(bool fAllowNew)
 
     if (fTestNet)
     {
-        pchMessageStart[0] = 0x2c;
-        pchMessageStart[1] = 0xab;
-        pchMessageStart[2] = 0x21;
+        pchMessageStart[0] = 0xd3;
+        pchMessageStart[1] = 0xb9;
+        pchMessageStart[2] = 0xa7;
         pchMessageStart[3] = 0xc3;
 
         bnProofOfWorkLimit = bnProofOfWorkLimitTestNet; // 0x0000ffff PoW base target is fixed in testnet
@@ -2559,7 +2559,7 @@ bool LoadBlockIndex(bool fAllowNew)
         if (!fAllowNew)
             return false;
 
-        const char* pszTimestamp = "https://news.bitcoin.com/mark-karpeles-wants-resurrect-mt-gox-ico";
+        const char* pszTimestamp = "https://news.bitcoin.com/large-glassware-plant-in-siberia-to-mine-bitcoin/";
         CTransaction txNew;
         txNew.nTime = 1511096400;
         txNew.vin.resize(1);
@@ -2863,7 +2863,7 @@ bool static AlreadyHave(CTxDB& txdb, const CInv& inv)
 // The message start string is designed to be unlikely to occur in normal data.
 // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
 // a large 4-byte int at any alignment.
-unsigned char pchMessageStart[4] = { 0x42, 0xa4, 0xc5, 0x2b };
+unsigned char pchMessageStart[4] = { 0xc9, 0xd2, 0xd0, 0xb4 };
 
 bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
 {
