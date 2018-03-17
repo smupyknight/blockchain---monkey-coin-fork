@@ -2575,12 +2575,13 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nVersion = 1;
         block.nTime    = 1521279142;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 0;
+        block.nNonce   = 548449;
 		if(fTestNet)
         {
-            block.nNonce   = 0;
+            block.nNonce   = 548449;
         }
-        if (false && block.GetHash() != (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet)) {
+        if (true && block.GetHash() != (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet)) {
+            printf("Searching for genesis block...\n");
             // This will figure out a valid hash and Nonce if you're
             // creating a different genesis block:
             uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
@@ -2601,7 +2602,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nNonce = %u \n", block.nNonce);
 
         //// debug print
-        assert(block.hashMerkleRoot == uint256("0x"));
+        assert(block.hashMerkleRoot == uint256("0xeeef97d6b852b21f4f67b527c26fba7f93e664b5ce6321bbbff14a9d38f8cd6b"));
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
