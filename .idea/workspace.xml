@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cd2f3f2a-9807-41c5-be09-eac92f4fe97e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/net.cpp" afterPath="$PROJECT_DIR$/src/net.cpp" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,16 +14,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="bitcoinrpc.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bitcoinrpc.cpp">
           <provider selected="true" editor-type-id="text-editor">
@@ -64,11 +54,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="987" column="26" lean-forward="false" selection-start-line="987" selection-start-column="26" selection-end-line="987" selection-end-column="26" />
+            <state relative-caret-position="245">
+              <caret line="982" column="0" lean-forward="true" selection-start-line="982" selection-start-column="0" selection-end-line="982" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="net.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/net.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="1123" column="38" lean-forward="true" selection-start-line="1123" selection-start-column="38" selection-end-line="1123" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -138,6 +138,7 @@
       <find>getblockvalue</find>
       <find>ntargetspacing</find>
       <find>nsubsidy</find>
+      <find>dnsseed</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -155,6 +156,7 @@
         <option value="$PROJECT_DIR$/src/main.h" />
         <option value="$PROJECT_DIR$/src/checkpoints.cpp" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/src/net.cpp" />
       </list>
     </option>
   </component>
@@ -235,12 +237,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521275396461</updated>
-      <workItem from="1521275398637" duration="3519000" />
+      <workItem from="1521275398637" duration="3645000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3519000" />
+    <option name="totallyTimeSpent" value="3645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="780" y="0" width="1071" height="1006" extended-state="0" />
@@ -360,8 +362,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="987" column="26" lean-forward="false" selection-start-line="987" selection-start-column="26" selection-end-line="987" selection-end-column="26" />
+        <state relative-caret-position="245">
+          <caret line="982" column="0" lean-forward="true" selection-start-line="982" selection-start-column="0" selection-end-line="982" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="1123" column="38" lean-forward="true" selection-start-line="1123" selection-start-column="38" selection-end-line="1123" selection-end-column="38" />
           <folding />
         </state>
       </provider>
