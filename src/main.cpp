@@ -951,6 +951,7 @@ uint256 WantedByOrphan(const CBlock* pblockOrphan)
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
+    printf("Proof of Work Called");
 	int64_t nSubsidy = 1 * COIN;
 
 	if(pindexBest->nHeight < 1)
@@ -984,6 +985,7 @@ const int DAILY_BLOCKCOUNT =  480;
 // miner's coin stake reward based on coin age spent (coin-days)
 int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 {
+    printf("Proof of Stake Called");
     if (fTestNet) {
         int lastDigit = pindexBest->nHeight % 10;
         nRewardCoinYear = 365 * CENT;
