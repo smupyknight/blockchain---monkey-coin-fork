@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cd2f3f2a-9807-41c5-be09-eac92f4fe97e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/checkpoints.cpp" afterPath="$PROJECT_DIR$/src/checkpoints.cpp" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,16 +14,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="makefile.osx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/makefile.osx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="79" column="19" lean-forward="false" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
@@ -74,11 +64,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="2563" column="32" lean-forward="false" selection-start-line="2563" selection-start-column="32" selection-end-line="2563" selection-end-column="32" />
+            <state relative-caret-position="210">
+              <caret line="2642" column="7" lean-forward="false" selection-start-line="2642" selection-start-column="7" selection-end-line="2642" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkpoints.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/checkpoints.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkpoints.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/checkpoints.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -119,6 +129,12 @@
       <find>hashGenesisBlock</find>
       <find>merkleroot</find>
       <find>hashgenesisblock =</find>
+      <find>mapcheck</find>
+      <find>ccheckpoin</find>
+      <find>&amp;map</find>
+      <find>mapCheckpoints</find>
+      <find>csynccheckpoint</find>
+      <find>checkpointMessage</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -135,6 +151,7 @@
         <option value="$PROJECT_DIR$/src/alert.cpp" />
         <option value="$PROJECT_DIR$/src/main.h" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/src/checkpoints.cpp" />
       </list>
     </option>
   </component>
@@ -215,12 +232,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521275396461</updated>
-      <workItem from="1521275398637" duration="2417000" />
+      <workItem from="1521275398637" duration="3217000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2417000" />
+    <option name="totallyTimeSpent" value="3217000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="780" y="0" width="1071" height="1006" extended-state="0" />
@@ -324,8 +341,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="2563" column="32" lean-forward="false" selection-start-line="2563" selection-start-column="32" selection-end-line="2563" selection-end-column="32" />
+        <state relative-caret-position="210">
+          <caret line="2642" column="7" lean-forward="false" selection-start-line="2642" selection-start-column="7" selection-end-line="2642" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/checkpoints.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/checkpoints.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
           <folding />
         </state>
       </provider>
