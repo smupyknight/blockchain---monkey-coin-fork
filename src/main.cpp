@@ -38,7 +38,7 @@ libzerocoin::Params* ZCParams;
 
 CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // "standard" scrypt target limit for proof of work, results with 0,000244140625 proof-of-work difficulty
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
-CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
+CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 4);
 
 unsigned int nTargetSpacing = 3 * 60; 	// 3 mins
 unsigned int nStakeMinAge = 8 * 60 * 60; 	// 8 hours
@@ -951,7 +951,6 @@ uint256 WantedByOrphan(const CBlock* pblockOrphan)
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
-    printf("Proof of Work Called\n");
 	int64_t nSubsidy = 1 * COIN;
 
 	if(pindexBest->nHeight < 1)
