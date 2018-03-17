@@ -1,5 +1,5 @@
-obj/util.o: util.cpp /Volumes/Project/Monkey-daemon-qt-build/src/util.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/uint256.h \
+obj/util.o: util.cpp /Volumes/Project/Corallium/Monkey/src/util.h \
+  /Volumes/Project/Corallium/Monkey/src/uint256.h \
   /opt/local/include/boost/thread.hpp \
   /opt/local/include/boost/thread/thread.hpp \
   /opt/local/include/boost/thread/thread_only.hpp \
@@ -752,15 +752,15 @@ obj/util.o: util.cpp /Volumes/Project/Monkey-daemon-qt-build/src/util.h \
   /opt/local/include/openssl/sha.h /opt/local/include/openssl/e_os2.h \
   /opt/local/include/openssl/opensslconf.h \
   /opt/local/include/openssl/ripemd.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/netbase.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/serialize.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/allocators.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/version.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/clientversion.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/compat.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/sync.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/strlcpy.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/ui_interface.h \
+  /Volumes/Project/Corallium/Monkey/src/netbase.h \
+  /Volumes/Project/Corallium/Monkey/src/serialize.h \
+  /Volumes/Project/Corallium/Monkey/src/allocators.h \
+  /Volumes/Project/Corallium/Monkey/src/version.h \
+  /Volumes/Project/Corallium/Monkey/src/clientversion.h \
+  /Volumes/Project/Corallium/Monkey/src/compat.h \
+  /Volumes/Project/Corallium/Monkey/src/sync.h \
+  /Volumes/Project/Corallium/Monkey/src/strlcpy.h \
+  /Volumes/Project/Corallium/Monkey/src/ui_interface.h \
   /opt/local/include/boost/signals2/last_value.hpp \
   /opt/local/include/boost/optional.hpp \
   /opt/local/include/boost/optional/optional.hpp \
@@ -1187,8 +1187,8 @@ obj/util.o: util.cpp /Volumes/Project/Monkey-daemon-qt-build/src/util.h \
   /opt/local/include/openssl/ossl_typ.h \
   /opt/local/include/openssl/symhacks.h \
   /opt/local/include/openssl/rand.h
-util.cpp /Volumes/Project/Monkey-daemon-qt-build/src/util.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/uint256.h :
+util.cpp /Volumes/Project/Corallium/Monkey/src/util.h :
+  /Volumes/Project/Corallium/Monkey/src/uint256.h :
   /opt/local/include/boost/thread.hpp :
   /opt/local/include/boost/thread/thread.hpp :
   /opt/local/include/boost/thread/thread_only.hpp :
@@ -1941,15 +1941,15 @@ util.cpp /Volumes/Project/Monkey-daemon-qt-build/src/util.h :
   /opt/local/include/openssl/sha.h /opt/local/include/openssl/e_os2.h :
   /opt/local/include/openssl/opensslconf.h :
   /opt/local/include/openssl/ripemd.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/netbase.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/serialize.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/allocators.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/version.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/clientversion.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/compat.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/sync.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/strlcpy.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/ui_interface.h :
+  /Volumes/Project/Corallium/Monkey/src/netbase.h :
+  /Volumes/Project/Corallium/Monkey/src/serialize.h :
+  /Volumes/Project/Corallium/Monkey/src/allocators.h :
+  /Volumes/Project/Corallium/Monkey/src/version.h :
+  /Volumes/Project/Corallium/Monkey/src/clientversion.h :
+  /Volumes/Project/Corallium/Monkey/src/compat.h :
+  /Volumes/Project/Corallium/Monkey/src/sync.h :
+  /Volumes/Project/Corallium/Monkey/src/strlcpy.h :
+  /Volumes/Project/Corallium/Monkey/src/ui_interface.h :
   /opt/local/include/boost/signals2/last_value.hpp :
   /opt/local/include/boost/optional.hpp :
   /opt/local/include/boost/optional/optional.hpp :

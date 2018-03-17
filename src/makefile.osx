@@ -6,7 +6,6 @@
 # Mac OS X makefile for monkey
 # Originally by Laszlo Hanyecz (solar@heliacal.net)
 
-CC=clang
 CXX=llvm-g++
 DEPSDIR=/opt/local
 

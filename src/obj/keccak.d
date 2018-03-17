@@ -1,2 +1,2 @@
-obj/keccak.o: keccak.c /Volumes/Project/Monkey/src/sph_keccak.h \
-  /Volumes/Project/Monkey/src/sph_types.h
+obj/keccak.o: keccak.c /Volumes/Project/Corallium/Monkey/src/sph_keccak.h \
+  /Volumes/Project/Corallium/Monkey/src/sph_types.h

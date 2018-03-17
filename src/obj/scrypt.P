@@ -1,7 +1,6 @@
-obj/scrypt.o: scrypt.cpp \
-  /Volumes/Project/Monkey-daemon-qt-build/src/scrypt.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/util.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/uint256.h \
+obj/scrypt.o: scrypt.cpp /Volumes/Project/Corallium/Monkey/src/scrypt.h \
+  /Volumes/Project/Corallium/Monkey/src/util.h \
+  /Volumes/Project/Corallium/Monkey/src/uint256.h \
   /opt/local/include/boost/thread.hpp \
   /opt/local/include/boost/thread/thread.hpp \
   /opt/local/include/boost/thread/thread_only.hpp \
@@ -754,13 +753,13 @@ obj/scrypt.o: scrypt.cpp \
   /opt/local/include/openssl/sha.h /opt/local/include/openssl/e_os2.h \
   /opt/local/include/openssl/opensslconf.h \
   /opt/local/include/openssl/ripemd.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/netbase.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/serialize.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/allocators.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/version.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/clientversion.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/compat.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/net.h \
+  /Volumes/Project/Corallium/Monkey/src/netbase.h \
+  /Volumes/Project/Corallium/Monkey/src/serialize.h \
+  /Volumes/Project/Corallium/Monkey/src/allocators.h \
+  /Volumes/Project/Corallium/Monkey/src/version.h \
+  /Volumes/Project/Corallium/Monkey/src/clientversion.h \
+  /Volumes/Project/Corallium/Monkey/src/compat.h \
+  /Volumes/Project/Corallium/Monkey/src/net.h \
   /opt/local/include/boost/array.hpp /opt/local/include/boost/swap.hpp \
   /opt/local/include/boost/foreach.hpp \
   /opt/local/include/boost/range/end.hpp \
@@ -778,15 +777,14 @@ obj/scrypt.o: scrypt.cpp \
   /opt/local/include/boost/type_traits/aligned_storage.hpp \
   /opt/local/include/openssl/rand.h \
   /opt/local/include/openssl/ossl_typ.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/mruset.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/protocol.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/addrman.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/sync.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/pbkdf2.h
-scrypt.cpp :
-  /Volumes/Project/Monkey-daemon-qt-build/src/scrypt.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/util.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/uint256.h :
+  /Volumes/Project/Corallium/Monkey/src/mruset.h \
+  /Volumes/Project/Corallium/Monkey/src/protocol.h \
+  /Volumes/Project/Corallium/Monkey/src/addrman.h \
+  /Volumes/Project/Corallium/Monkey/src/sync.h \
+  /Volumes/Project/Corallium/Monkey/src/pbkdf2.h
+scrypt.cpp /Volumes/Project/Corallium/Monkey/src/scrypt.h :
+  /Volumes/Project/Corallium/Monkey/src/util.h :
+  /Volumes/Project/Corallium/Monkey/src/uint256.h :
   /opt/local/include/boost/thread.hpp :
   /opt/local/include/boost/thread/thread.hpp :
   /opt/local/include/boost/thread/thread_only.hpp :
@@ -1539,13 +1537,13 @@ scrypt.cpp :
   /opt/local/include/openssl/sha.h /opt/local/include/openssl/e_os2.h :
   /opt/local/include/openssl/opensslconf.h :
   /opt/local/include/openssl/ripemd.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/netbase.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/serialize.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/allocators.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/version.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/clientversion.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/compat.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/net.h :
+  /Volumes/Project/Corallium/Monkey/src/netbase.h :
+  /Volumes/Project/Corallium/Monkey/src/serialize.h :
+  /Volumes/Project/Corallium/Monkey/src/allocators.h :
+  /Volumes/Project/Corallium/Monkey/src/version.h :
+  /Volumes/Project/Corallium/Monkey/src/clientversion.h :
+  /Volumes/Project/Corallium/Monkey/src/compat.h :
+  /Volumes/Project/Corallium/Monkey/src/net.h :
   /opt/local/include/boost/array.hpp /opt/local/include/boost/swap.hpp :
   /opt/local/include/boost/foreach.hpp :
   /opt/local/include/boost/range/end.hpp :
@@ -1563,8 +1561,8 @@ scrypt.cpp :
   /opt/local/include/boost/type_traits/aligned_storage.hpp :
   /opt/local/include/openssl/rand.h :
   /opt/local/include/openssl/ossl_typ.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/mruset.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/protocol.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/addrman.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/sync.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/pbkdf2.h :
+  /Volumes/Project/Corallium/Monkey/src/mruset.h :
+  /Volumes/Project/Corallium/Monkey/src/protocol.h :
+  /Volumes/Project/Corallium/Monkey/src/addrman.h :
+  /Volumes/Project/Corallium/Monkey/src/sync.h :
+  /Volumes/Project/Corallium/Monkey/src/pbkdf2.h :

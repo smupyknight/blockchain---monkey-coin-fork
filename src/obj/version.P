@@ -1,8 +1,8 @@
 obj/version.o: version.cpp \
-  /Volumes/Project/Monkey-daemon-qt-build/src/version.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/clientversion.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/obj/build.h
+  /Volumes/Project/Corallium/Monkey/src/version.h \
+  /Volumes/Project/Corallium/Monkey/src/clientversion.h \
+  /Volumes/Project/Corallium/Monkey/src/obj/build.h
 version.cpp :
-  /Volumes/Project/Monkey-daemon-qt-build/src/version.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/clientversion.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/obj/build.h :
+  /Volumes/Project/Corallium/Monkey/src/version.h :
+  /Volumes/Project/Corallium/Monkey/src/clientversion.h :
+  /Volumes/Project/Corallium/Monkey/src/obj/build.h :

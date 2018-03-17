@@ -45,7 +45,7 @@ obj/zerocoin/SerialNumberSignatureOfKnowledge.o: \
   /opt/local/include/boost/type_traits/remove_reference.hpp \
   /opt/local/include/boost/utility/swap.hpp \
   /opt/local/include/boost/core/swap.hpp \
-  /Volumes/Project/Monkey/src/allocators.h \
+  /Volumes/Project/Corallium/Monkey/src/allocators.h \
   /opt/local/include/boost/thread/mutex.hpp \
   /opt/local/include/boost/thread/detail/platform.hpp \
   /opt/local/include/boost/config/requires_threads.hpp \
@@ -433,10 +433,10 @@ obj/zerocoin/SerialNumberSignatureOfKnowledge.o: \
   /opt/local/include/boost/chrono/detail/system.hpp \
   /opt/local/include/boost/chrono/clock_string.hpp \
   /opt/local/include/boost/chrono/ceil.hpp \
-  /Volumes/Project/Monkey/src/version.h \
-  /Volumes/Project/Monkey/src/clientversion.h zerocoin/../bignum.h \
-  /Volumes/Project/Monkey/src/uint256.h /opt/local/include/openssl/bn.h \
-  /opt/local/include/openssl/e_os2.h \
+  /Volumes/Project/Corallium/Monkey/src/version.h \
+  /Volumes/Project/Corallium/Monkey/src/clientversion.h \
+  zerocoin/../bignum.h /Volumes/Project/Corallium/Monkey/src/uint256.h \
+  /opt/local/include/openssl/bn.h /opt/local/include/openssl/e_os2.h \
   /opt/local/include/openssl/opensslconf.h \
   /opt/local/include/openssl/ossl_typ.h \
   /opt/local/include/openssl/crypto.h /opt/local/include/openssl/stack.h \
@@ -762,9 +762,9 @@ obj/zerocoin/SerialNumberSignatureOfKnowledge.o: \
   /opt/local/include/boost/filesystem/string_file.hpp \
   /opt/local/include/boost/filesystem/fstream.hpp \
   /opt/local/include/openssl/sha.h /opt/local/include/openssl/ripemd.h \
-  /Volumes/Project/Monkey/src/netbase.h \
-  /Volumes/Project/Monkey/src/compat.h zerocoin/Params.h zerocoin/Coin.h \
-  zerocoin/Commitment.h zerocoin/Accumulator.h \
+  /Volumes/Project/Corallium/Monkey/src/netbase.h \
+  /Volumes/Project/Corallium/Monkey/src/compat.h zerocoin/Params.h \
+  zerocoin/Coin.h zerocoin/Commitment.h zerocoin/Accumulator.h \
   zerocoin/AccumulatorProofOfKnowledge.h zerocoin/CoinSpend.h \
   zerocoin/SerialNumberSignatureOfKnowledge.h zerocoin/SpendMetaData.h \
   zerocoin/ParamGeneration.h
@@ -814,7 +814,7 @@ obj/zerocoin/SerialNumberSignatureOfKnowledge.o: \
   /opt/local/include/boost/type_traits/remove_reference.hpp :
   /opt/local/include/boost/utility/swap.hpp :
   /opt/local/include/boost/core/swap.hpp :
-  /Volumes/Project/Monkey/src/allocators.h :
+  /Volumes/Project/Corallium/Monkey/src/allocators.h :
   /opt/local/include/boost/thread/mutex.hpp :
   /opt/local/include/boost/thread/detail/platform.hpp :
   /opt/local/include/boost/config/requires_threads.hpp :
@@ -1202,10 +1202,10 @@ obj/zerocoin/SerialNumberSignatureOfKnowledge.o: \
   /opt/local/include/boost/chrono/detail/system.hpp :
   /opt/local/include/boost/chrono/clock_string.hpp :
   /opt/local/include/boost/chrono/ceil.hpp :
-  /Volumes/Project/Monkey/src/version.h :
-  /Volumes/Project/Monkey/src/clientversion.h zerocoin/../bignum.h :
-  /Volumes/Project/Monkey/src/uint256.h /opt/local/include/openssl/bn.h :
-  /opt/local/include/openssl/e_os2.h :
+  /Volumes/Project/Corallium/Monkey/src/version.h :
+  /Volumes/Project/Corallium/Monkey/src/clientversion.h :
+  zerocoin/../bignum.h /Volumes/Project/Corallium/Monkey/src/uint256.h :
+  /opt/local/include/openssl/bn.h /opt/local/include/openssl/e_os2.h :
   /opt/local/include/openssl/opensslconf.h :
   /opt/local/include/openssl/ossl_typ.h :
   /opt/local/include/openssl/crypto.h /opt/local/include/openssl/stack.h :
@@ -1531,9 +1531,9 @@ obj/zerocoin/SerialNumberSignatureOfKnowledge.o: \
   /opt/local/include/boost/filesystem/string_file.hpp :
   /opt/local/include/boost/filesystem/fstream.hpp :
   /opt/local/include/openssl/sha.h /opt/local/include/openssl/ripemd.h :
-  /Volumes/Project/Monkey/src/netbase.h :
-  /Volumes/Project/Monkey/src/compat.h zerocoin/Params.h zerocoin/Coin.h :
-  zerocoin/Commitment.h zerocoin/Accumulator.h :
+  /Volumes/Project/Corallium/Monkey/src/netbase.h :
+  /Volumes/Project/Corallium/Monkey/src/compat.h zerocoin/Params.h :
+  zerocoin/Coin.h zerocoin/Commitment.h zerocoin/Accumulator.h :
   zerocoin/AccumulatorProofOfKnowledge.h zerocoin/CoinSpend.h :
   zerocoin/SerialNumberSignatureOfKnowledge.h zerocoin/SpendMetaData.h :
   zerocoin/ParamGeneration.h :

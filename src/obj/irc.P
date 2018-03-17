@@ -1,5 +1,5 @@
-obj/irc.o: irc.cpp /Volumes/Project/Monkey-daemon-qt-build/src/irc.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/net.h \
+obj/irc.o: irc.cpp /Volumes/Project/Corallium/Monkey/src/irc.h \
+  /Volumes/Project/Corallium/Monkey/src/net.h \
   /opt/local/include/boost/array.hpp \
   /opt/local/include/boost/detail/workaround.hpp \
   /opt/local/include/boost/config/workaround.hpp \
@@ -247,9 +247,9 @@ obj/irc.o: irc.cpp /Volumes/Project/Monkey-daemon-qt-build/src/irc.h \
   /opt/local/include/openssl/ossl_typ.h \
   /opt/local/include/openssl/e_os2.h \
   /opt/local/include/openssl/opensslconf.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/mruset.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/netbase.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/serialize.h \
+  /Volumes/Project/Corallium/Monkey/src/mruset.h \
+  /Volumes/Project/Corallium/Monkey/src/netbase.h \
+  /Volumes/Project/Corallium/Monkey/src/serialize.h \
   /opt/local/include/boost/type_traits/is_fundamental.hpp \
   /opt/local/include/boost/tuple/tuple.hpp \
   /opt/local/include/boost/ref.hpp /opt/local/include/boost/core/ref.hpp \
@@ -260,7 +260,7 @@ obj/irc.o: irc.cpp /Volumes/Project/Monkey-daemon-qt-build/src/irc.h \
   /opt/local/include/boost/type_traits/remove_volatile.hpp \
   /opt/local/include/boost/type_traits/function_traits.hpp \
   /opt/local/include/boost/utility/swap.hpp \
-  /Volumes/Project/Monkey-daemon-qt-build/src/allocators.h \
+  /Volumes/Project/Corallium/Monkey/src/allocators.h \
   /opt/local/include/boost/thread/mutex.hpp \
   /opt/local/include/boost/thread/detail/platform.hpp \
   /opt/local/include/boost/config/requires_threads.hpp \
@@ -536,13 +536,13 @@ obj/irc.o: irc.cpp /Volumes/Project/Monkey-daemon-qt-build/src/irc.h \
   /opt/local/include/boost/chrono/detail/system.hpp \
   /opt/local/include/boost/chrono/clock_string.hpp \
   /opt/local/include/boost/chrono/ceil.hpp \
-  /Volumes/Project/Monkey-daemon-qt-build/src/version.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/clientversion.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/compat.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/protocol.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/uint256.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/addrman.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/util.h \
+  /Volumes/Project/Corallium/Monkey/src/version.h \
+  /Volumes/Project/Corallium/Monkey/src/clientversion.h \
+  /Volumes/Project/Corallium/Monkey/src/compat.h \
+  /Volumes/Project/Corallium/Monkey/src/protocol.h \
+  /Volumes/Project/Corallium/Monkey/src/uint256.h \
+  /Volumes/Project/Corallium/Monkey/src/addrman.h \
+  /Volumes/Project/Corallium/Monkey/src/util.h \
   /opt/local/include/boost/thread.hpp \
   /opt/local/include/boost/thread/thread.hpp \
   /opt/local/include/boost/thread/thread_only.hpp \
@@ -781,19 +781,19 @@ obj/irc.o: irc.cpp /Volumes/Project/Monkey-daemon-qt-build/src/irc.h \
   /opt/local/include/boost/filesystem/string_file.hpp \
   /opt/local/include/boost/filesystem/fstream.hpp \
   /opt/local/include/openssl/sha.h /opt/local/include/openssl/ripemd.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/sync.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/strlcpy.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/base58.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/bignum.h \
+  /Volumes/Project/Corallium/Monkey/src/sync.h \
+  /Volumes/Project/Corallium/Monkey/src/strlcpy.h \
+  /Volumes/Project/Corallium/Monkey/src/base58.h \
+  /Volumes/Project/Corallium/Monkey/src/bignum.h \
   /opt/local/include/openssl/bn.h /opt/local/include/openssl/crypto.h \
   /opt/local/include/openssl/stack.h \
   /opt/local/include/openssl/safestack.h \
   /opt/local/include/openssl/opensslv.h \
   /opt/local/include/openssl/symhacks.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/key.h \
+  /Volumes/Project/Corallium/Monkey/src/key.h \
   /opt/local/include/openssl/ec.h /opt/local/include/openssl/asn1.h \
   /opt/local/include/openssl/bio.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/script.h \
+  /Volumes/Project/Corallium/Monkey/src/script.h \
   /opt/local/include/boost/variant.hpp \
   /opt/local/include/boost/variant/variant.hpp \
   /opt/local/include/boost/variant/detail/config.hpp \
@@ -974,8 +974,8 @@ obj/irc.o: irc.cpp /Volumes/Project/Monkey-daemon-qt-build/src/irc.h \
   /opt/local/include/boost/variant/detail/element_index.hpp \
   /opt/local/include/boost/variant/visitor_ptr.hpp \
   /opt/local/include/boost/variant/bad_visit.hpp \
-  /Volumes/Project/Monkey-daemon-qt-build/src/keystore.h \
-  /Volumes/Project/Monkey-daemon-qt-build/src/crypter.h \
+  /Volumes/Project/Corallium/Monkey/src/keystore.h \
+  /Volumes/Project/Corallium/Monkey/src/crypter.h \
   /opt/local/include/boost/signals2/signal.hpp \
   /opt/local/include/boost/signals2/connection.hpp \
   /opt/local/include/boost/signals2/detail/auto_buffer.hpp \
@@ -1043,8 +1043,8 @@ obj/irc.o: irc.cpp /Volumes/Project/Monkey-daemon-qt-build/src/irc.h \
   /opt/local/include/boost/preprocessor/iteration/local.hpp \
   /opt/local/include/boost/preprocessor/iteration/self.hpp \
   /opt/local/include/boost/signals2/detail/signal_template.hpp
-irc.cpp /Volumes/Project/Monkey-daemon-qt-build/src/irc.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/net.h :
+irc.cpp /Volumes/Project/Corallium/Monkey/src/irc.h :
+  /Volumes/Project/Corallium/Monkey/src/net.h :
   /opt/local/include/boost/array.hpp :
   /opt/local/include/boost/detail/workaround.hpp :
   /opt/local/include/boost/config/workaround.hpp :
@@ -1292,9 +1292,9 @@ irc.cpp /Volumes/Project/Monkey-daemon-qt-build/src/irc.h :
   /opt/local/include/openssl/ossl_typ.h :
   /opt/local/include/openssl/e_os2.h :
   /opt/local/include/openssl/opensslconf.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/mruset.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/netbase.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/serialize.h :
+  /Volumes/Project/Corallium/Monkey/src/mruset.h :
+  /Volumes/Project/Corallium/Monkey/src/netbase.h :
+  /Volumes/Project/Corallium/Monkey/src/serialize.h :
   /opt/local/include/boost/type_traits/is_fundamental.hpp :
   /opt/local/include/boost/tuple/tuple.hpp :
   /opt/local/include/boost/ref.hpp /opt/local/include/boost/core/ref.hpp :
@@ -1305,7 +1305,7 @@ irc.cpp /Volumes/Project/Monkey-daemon-qt-build/src/irc.h :
   /opt/local/include/boost/type_traits/remove_volatile.hpp :
   /opt/local/include/boost/type_traits/function_traits.hpp :
   /opt/local/include/boost/utility/swap.hpp :
-  /Volumes/Project/Monkey-daemon-qt-build/src/allocators.h :
+  /Volumes/Project/Corallium/Monkey/src/allocators.h :
   /opt/local/include/boost/thread/mutex.hpp :
   /opt/local/include/boost/thread/detail/platform.hpp :
   /opt/local/include/boost/config/requires_threads.hpp :
@@ -1581,13 +1581,13 @@ irc.cpp /Volumes/Project/Monkey-daemon-qt-build/src/irc.h :
   /opt/local/include/boost/chrono/detail/system.hpp :
   /opt/local/include/boost/chrono/clock_string.hpp :
   /opt/local/include/boost/chrono/ceil.hpp :
-  /Volumes/Project/Monkey-daemon-qt-build/src/version.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/clientversion.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/compat.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/protocol.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/uint256.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/addrman.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/util.h :
+  /Volumes/Project/Corallium/Monkey/src/version.h :
+  /Volumes/Project/Corallium/Monkey/src/clientversion.h :
+  /Volumes/Project/Corallium/Monkey/src/compat.h :
+  /Volumes/Project/Corallium/Monkey/src/protocol.h :
+  /Volumes/Project/Corallium/Monkey/src/uint256.h :
+  /Volumes/Project/Corallium/Monkey/src/addrman.h :
+  /Volumes/Project/Corallium/Monkey/src/util.h :
   /opt/local/include/boost/thread.hpp :
   /opt/local/include/boost/thread/thread.hpp :
   /opt/local/include/boost/thread/thread_only.hpp :
@@ -1826,19 +1826,19 @@ irc.cpp /Volumes/Project/Monkey-daemon-qt-build/src/irc.h :
   /opt/local/include/boost/filesystem/string_file.hpp :
   /opt/local/include/boost/filesystem/fstream.hpp :
   /opt/local/include/openssl/sha.h /opt/local/include/openssl/ripemd.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/sync.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/strlcpy.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/base58.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/bignum.h :
+  /Volumes/Project/Corallium/Monkey/src/sync.h :
+  /Volumes/Project/Corallium/Monkey/src/strlcpy.h :
+  /Volumes/Project/Corallium/Monkey/src/base58.h :
+  /Volumes/Project/Corallium/Monkey/src/bignum.h :
   /opt/local/include/openssl/bn.h /opt/local/include/openssl/crypto.h :
   /opt/local/include/openssl/stack.h :
   /opt/local/include/openssl/safestack.h :
   /opt/local/include/openssl/opensslv.h :
   /opt/local/include/openssl/symhacks.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/key.h :
+  /Volumes/Project/Corallium/Monkey/src/key.h :
   /opt/local/include/openssl/ec.h /opt/local/include/openssl/asn1.h :
   /opt/local/include/openssl/bio.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/script.h :
+  /Volumes/Project/Corallium/Monkey/src/script.h :
   /opt/local/include/boost/variant.hpp :
   /opt/local/include/boost/variant/variant.hpp :
   /opt/local/include/boost/variant/detail/config.hpp :
@@ -2019,8 +2019,8 @@ irc.cpp /Volumes/Project/Monkey-daemon-qt-build/src/irc.h :
   /opt/local/include/boost/variant/detail/element_index.hpp :
   /opt/local/include/boost/variant/visitor_ptr.hpp :
   /opt/local/include/boost/variant/bad_visit.hpp :
-  /Volumes/Project/Monkey-daemon-qt-build/src/keystore.h :
-  /Volumes/Project/Monkey-daemon-qt-build/src/crypter.h :
+  /Volumes/Project/Corallium/Monkey/src/keystore.h :
+  /Volumes/Project/Corallium/Monkey/src/crypter.h :
   /opt/local/include/boost/signals2/signal.hpp :
   /opt/local/include/boost/signals2/connection.hpp :
   /opt/local/include/boost/signals2/detail/auto_buffer.hpp :
