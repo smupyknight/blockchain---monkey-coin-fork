@@ -1,7 +1,6 @@
 # temporary build files
 build
 monkey-Qt.app
-Monkey-qt*
 monkeyd
 .qmake.stash
 qrc_*.cpp
