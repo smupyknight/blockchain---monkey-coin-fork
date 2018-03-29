@@ -998,7 +998,7 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 
     } else {
         // Main net
-        if (pindexBest->nHeight <= 1000)
+        /*if (pindexBest->nHeight <= 1000)
             nRewardCoinYear = 0 * CENT;
         else if (pindexBest->nHeight <= 5000)
         {
@@ -1016,7 +1016,7 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
         {
             nRewardCoinYear = ((pindexBest->nHeight <= 10501) ? 1850 * CENT : 365 * CENT);
         }
-        else {
+        else {*/
             int lastDigit = pindexBest->nHeight % 10;
             nRewardCoinYear = 365 * CENT;
 
@@ -1024,7 +1024,7 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
                 nRewardCoinYear = 1850 * CENT;
             else if (lastDigit == 5 || lastDigit == 8) // ULTRABLOCKS
                 nRewardCoinYear = 730 * CENT;
-        }
+        /*}*/
     }
 
     int64_t nSubsidy = nCoinAge * (nRewardCoinYear / CENT / 100) / 365;
