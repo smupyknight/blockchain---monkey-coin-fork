@@ -2,6 +2,7 @@
 build
 monkey-Qt.app
 monkeyd
+monkeyd.exe
 .qmake.stash
 qrc_*.cpp
 *.qm
