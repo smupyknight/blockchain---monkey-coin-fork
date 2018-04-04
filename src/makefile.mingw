@@ -21,23 +21,23 @@ USE_UPNP:=-
 USE_IPV6:=1
 
 DEPSDIR?=/usr/local
-BOOST_SUFFIX?=-mgw48-mt-s-1_55
+BOOST_SUFFIX?=-mgw63-mt-s-1_65
 
 INCLUDEPATHS= \
  -I"$(CURDIR)" \
  -I"$(DEPSDIR)/include" \
- -I"c:/deps/boost_1_55_0" \
- -I"c:/deps/db-4.8.30.NC/build_unix" \
+ -I"D:/Dependencies/boost_1_65_0" \
+ -I"D:/Dependencies/db-4.8.30/build_unix" \
  -I"c:/deps/miniupnpc-1.8" \
- -I"c:/deps/openssl-1.0.1g/include"
+ -I"D:/Dependencies/openssl-1.0.2o/include"
 
 LIBPATHS= \
  -L"$(CURDIR)/leveldb" \
  -L"$(DEPSDIR)/lib" \
- -L"c:/deps/boost_1_55_0/stage/lib" \
- -L"c:/deps/db-4.8.30.NC/build_unix" \
+ -L"D:/Dependencies/boost_1_65_0/stage/lib" \
+ -L"D:/Dependencies/db-4.8.30/build_unix" \
  -L"c:/deps/miniupnpc-1.8" \
- -L"c:/deps/openssl-1.0.1g"
+ -L"D:/Dependencies/openssl-1.0.2o"
 
 LIBS= \
  -l leveldb \
@@ -122,7 +122,17 @@ OBJS= \
     obj/scrypt.o \
     obj/scrypt-arm.o \
     obj/scrypt-x86.o \
-    obj/scrypt-x86_64.o 
+    obj/scrypt-x86_64.o \
+    obj/zerocoin/Accumulator.o \
+    obj/zerocoin/AccumulatorProofOfKnowledge.o \
+    obj/zerocoin/Coin.o \
+    obj/zerocoin/CoinSpend.o \
+    obj/zerocoin/Commitment.o \
+    obj/zerocoin/ParamGeneration.o \
+    obj/zerocoin/Params.o \
+    obj/zerocoin/SerialNumberSignatureOfKnowledge.o \
+    obj/zerocoin/SpendMetaData.o \
+    obj/zerocoin/ZeroTest.o
 
 all: monkeyd.exe
 
@@ -165,7 +175,8 @@ monkeyd.exe: $(OBJS:obj/%=obj/%)
 	g++ $(CFLAGS) $(LDFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS)
 
 clean:
-	-del /Q monkeyd
-	-del /Q obj\*
+    -del /Q monkeyd
+    -del /Q obj\*
+
 
 FORCE:
