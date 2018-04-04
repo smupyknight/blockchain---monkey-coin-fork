@@ -50,6 +50,15 @@ macx {
     BOOST_INCLUDE_PATH = /opt/local/include
 }
 
+win32 {
+    OPENSSL_INCLUDE_PATH = D:\Dependencies\openssl-1.0.2o\include
+    OPENSSL_LIB_PATH = D:\Dependencies\openssl-1.0.2o
+    BDB_LIB_PATH = D:\Dependencies\db-4.8.30\build_unix
+    BDB_INCLUDE_PATH = D:\Dependencies\db-4.8.30\build_unix
+    BOOST_LIB_PATH = D:\Dependencies\boost_1_65_0\stage\lib
+    BOOST_INCLUDE_PATH = D:\Dependencies\boost_1_65_0
+}
+
 !win32 {
 # for extra security against potential buffer overflows: enable GCCs Stack Smashing Protection
 QMAKE_CXXFLAGS *= -fstack-protector-all --param ssp-buffer-size=1
@@ -423,7 +432,7 @@ OTHER_FILES += \
 # platform specific defaults, if not overridden on command line
 isEmpty(BOOST_LIB_SUFFIX) {
     macx:BOOST_LIB_SUFFIX = -mt
-    windows:BOOST_LIB_SUFFIX = -mgw49-mt-s-1_55
+    windows:BOOST_LIB_SUFFIX = -mgw63-mt-s-1_65
 }
 
 isEmpty(BOOST_THREAD_LIB_SUFFIX) {
