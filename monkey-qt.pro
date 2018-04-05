@@ -1,5 +1,5 @@
 TEMPLATE = app
-TARGET = Monkey-qt
+TARGET = Corallium-qt
 VERSION = 1.4.2
 INCLUDEPATH += src src/json src/qt
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
@@ -51,12 +51,12 @@ macx {
 }
 
 win32 {
-    OPENSSL_INCLUDE_PATH = D:\Dependencies\openssl-1.0.2o\include
-    OPENSSL_LIB_PATH = D:\Dependencies\openssl-1.0.2o
-    BDB_LIB_PATH = D:\Dependencies\db-4.8.30\build_unix
-    BDB_INCLUDE_PATH = D:\Dependencies\db-4.8.30\build_unix
-    BOOST_LIB_PATH = D:\Dependencies\boost_1_65_0\stage\lib
-    BOOST_INCLUDE_PATH = D:\Dependencies\boost_1_65_0
+    OPENSSL_INCLUDE_PATH = D:\CoinEnv\Deps\openssl-1.0.2o\include
+    OPENSSL_LIB_PATH = D:\CoinEnv\Deps\openssl-1.0.2o
+    BDB_LIB_PATH = D:\CoinEnv\Deps\db-4.8.30\build_unix
+    BDB_INCLUDE_PATH = D:\CoinEnv\Deps\db-4.8.30\build_unix
+    BOOST_LIB_PATH = D:\CoinEnv\Deps\boost_1_65_0\stage\lib
+    BOOST_INCLUDE_PATH = D:\CoinEnv\Deps\boost_1_65_0
 }
 
 !win32 {
