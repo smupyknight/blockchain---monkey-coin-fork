@@ -1,4 +1,4 @@
-IDI_ICON1 ICON DISCARDABLE "icons/monkey.ico"
+IDI_ICON1 ICON DISCARDABLE "icons/corallium.ico"
 
 #include <windows.h>             // needed for VERSIONINFO
 #include "../../clientversion.h" // holds the needed client version information
@@ -18,10 +18,10 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "monkey"
-            VALUE "FileDescription",    "monkey-Qt (OSS GUI client for monkey)"
+            VALUE "CompanyName",        "corallium"
+            VALUE "FileDescription",    "corallium-Qt (OSS GUI client for corallium)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "monkey-qt"
+            VALUE "InternalName",       "corallium-qt"
             VALUE "LegalCopyright",     "2009-2012 The Bitcoin developers, 2012-2013 The monkey & PPCoin developers"
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "monkey-qt.exe"

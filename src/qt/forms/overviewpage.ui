@@ -36,14 +36,14 @@
              <string notr="true">font-family: Ubuntu; font-size: 18px; font-weight: bold; color: rgb(255,255,255);</string>
             </property>
             <property name="text">
-             <string>MONKEY COIN</string>
+             <string>Corallium</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QLabel" name="labelWalletStatus">
             <property name="toolTip">
-             <string>The displayed information may be out of date. Your wallet automatically synchronizes with the monkey network after a connection is established, but this process has not completed yet.</string>
+             <string>The displayed information may be out of date. Your wallet automatically synchronizes with the corallium network after a connection is established, but this process has not completed yet.</string>
             </property>
             <property name="styleSheet">
              <string notr="true">color: #FF5C5C;</string>
@@ -317,7 +317,7 @@
           <item>
            <widget class="QLabel" name="labelTransactionsStatus">
             <property name="toolTip">
-             <string>The displayed information may be out of date. Your wallet automatically synchronizes with the monkey network after a connection is established, but this process has not completed yet.</string>
+             <string>The displayed information may be out of date. Your wallet automatically synchronizes with the corallium network after a connection is established, but this process has not completed yet.</string>
             </property>
             <property name="styleSheet">
              <string notr="true">color: #FF5C5C;</string>
