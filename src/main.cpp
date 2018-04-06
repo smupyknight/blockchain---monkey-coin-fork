@@ -1033,7 +1033,7 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
         typedef boost::mt19937 RNGType;
         RNGType rng;
         boost::uniform_int<> one_to_hundred(1, 100);
-        boost::variate_generator<RNGType, boost::uniform_int<>> dice(rng, one_to_hundred);
+        boost::variate_generator<RNGType, boost::uniform_int<> > dice(rng, one_to_hundred);
 
         int n = dice();
         if (n < 5)
