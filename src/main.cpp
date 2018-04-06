@@ -15,6 +15,8 @@
 #include <boost/algorithm/string/replace.hpp>
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/fstream.hpp>
+#include <boost/random.hpp>
+#include <boost/generator_iterator.hpp>
 
 
 using namespace std;
@@ -1017,14 +1019,27 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
             nRewardCoinYear = ((pindexBest->nHeight <= 10501) ? 1850 * CENT : 365 * CENT);
         }
         else {*/
-            int lastDigit = pindexBest->nHeight % 10;
-            nRewardCoinYear = 365 * CENT;
+            // int lastDigit = pindexBest->nHeight % 10;
+            // nRewardCoinYear = 365 * CENT;
 
-            if (lastDigit == 1) // SUPERBLOCK
-                nRewardCoinYear = 1850 * CENT;
-            else if (lastDigit == 5 || lastDigit == 8) // ULTRABLOCKS
-                nRewardCoinYear = 730 * CENT;
+            // if (lastDigit == 1) // SUPERBLOCK
+            //     nRewardCoinYear = 1850 * CENT;
+            // else if (lastDigit == 5 || lastDigit == 8) // ULTRABLOCKS
+            //     nRewardCoinYear = 730 * CENT;
         /*}*/
+
+        nRewardCoinYear = 365 * CENT;
+
+        typedef boost::mt19937 RNGType;
+        RNGType rng;
+        boost::uniform_int<> one_to_hundred(1, 100);
+        boost::variate_generator<RNGType, boost::uniform_int<>> dice(rng, one_to_hundred);
+
+        int n = dice();
+        if (n < 5)
+            nRewardCoinYear = 1850 * CENT;
+        else if (n < 20)
+            nRewardCoinYear = 730 * CENT;
     }
 
     int64_t nSubsidy = nCoinAge * (nRewardCoinYear / CENT / 100) / 365;
