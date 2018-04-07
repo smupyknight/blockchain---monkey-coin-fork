@@ -595,7 +595,6 @@ void WorkMiner(CWallet *pwallet)
         auto_ptr<CBlock> pblock(CreateNewBlock(pwallet, false, &nFees));
         CReserveKey reservekey(pwallet);
 
-        printf("-----------------Validating newly created block.-----------------\n");
         // This will figure out a valid hash and Nonce if you're
         // creating a different genesis block:
         uint256 hashTarget = CBigNum().SetCompact(pblock->nBits).getuint256();
