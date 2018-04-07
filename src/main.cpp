@@ -986,7 +986,6 @@ const int DAILY_BLOCKCOUNT =  480;
 // miner's coin stake reward based on coin age spent (coin-days)
 int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 {
-    printf("Proof of Stake Called");
     if (fTestNet) {
         int lastDigit = pindexBest->nHeight % 10;
         nRewardCoinYear = 365 * CENT;
@@ -1030,21 +1029,24 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 
         nRewardCoinYear = 365 * CENT;
 
-        typedef boost::mt19937 RNGType;
+        /*typedef boost::mt19937 RNGType;
         RNGType rng;
         boost::uniform_int<> one_to_hundred(1, 100);
         boost::variate_generator<RNGType, boost::uniform_int<> > dice(rng, one_to_hundred);
 
-        int n = dice();
-        if (n < 5) {
-            printf("-------------------------ULTRA BLOCK CREATED-------------------------\n");
+        int n = dice();*/
+        int nLastTwo = pindexBest->nTime % 100;
+
+        printf("--------BLOCK CREATED: %d--------\n", pindexBest->nTime);
+        if (nLastTwo < 5) {
+            printf("--------ULTRA BLOCK CREATED--------\n");
             nRewardCoinYear = 1850 * CENT;
         }
-        else if (n < 20) {
-            printf("-------------------------SUPER BLOCK CREATED-------------------------\n");
+        else if (nLastTwo < 20) {
+            printf("--------SUPER BLOCK CREATED--------\n");
             nRewardCoinYear = 730 * CENT;
         } else {
-            printf("-------------------------NORMAL BLOCK CREATED-------------------------\n");
+            printf("--------NORMAL BLOCK CREATED-------\n");
         }
     }
 
