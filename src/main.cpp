@@ -1036,10 +1036,16 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
         boost::variate_generator<RNGType, boost::uniform_int<> > dice(rng, one_to_hundred);
 
         int n = dice();
-        if (n < 5)
+        if (n < 5) {
+            printf("-------------------------ULTRA BLOCK CREATED-------------------------\n");
             nRewardCoinYear = 1850 * CENT;
-        else if (n < 20)
+        }
+        else if (n < 20) {
+            printf("-------------------------SUPER BLOCK CREATED-------------------------\n");
             nRewardCoinYear = 730 * CENT;
+        } else {
+            printf("-------------------------NORMAL BLOCK CREATED-------------------------\n");
+        }
     }
 
     int64_t nSubsidy = nCoinAge * (nRewardCoinYear / CENT / 100) / 365;
