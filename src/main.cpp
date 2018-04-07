@@ -983,6 +983,10 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 }
 
 const int DAILY_BLOCKCOUNT =  480;
+int totalPoSBlockCount = 0;
+int normalBlockCount = 0;
+int superBlockCount = 0;
+int ultraBlockCount = 0;
 // miner's coin stake reward based on coin age spent (coin-days)
 int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 {
@@ -1037,16 +1041,21 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
         int n = dice();*/
         int nLastTwo = pindexBest->nTime % 100;
 
-        printf("--------BLOCK CREATED: %d--------\n", pindexBest->nTime);
+        totalPoSBlockCount ++;
+
+        printf("--------BLOCK CREATED: TOTAL COUNT: %d--------\n", totalPoSBlockCount);
         if (nLastTwo < 5) {
-            printf("--------ULTRA BLOCK CREATED--------\n");
+            ultraBlockCount ++;
+            printf("--------ULTRA BLOCK CREATED: TOTAL COUNT: %d--------\n", ultraBlockCount);
             nRewardCoinYear = 1850 * CENT;
         }
         else if (nLastTwo < 20) {
-            printf("--------SUPER BLOCK CREATED--------\n");
+            superBlockCount ++;
+            printf("--------SUPER BLOCK CREATED: TOTAL COUNT: %d--------\n", superBlockCount);
             nRewardCoinYear = 730 * CENT;
         } else {
-            printf("--------NORMAL BLOCK CREATED-------\n");
+            normalBlockCount ++;
+            printf("--------NORMAL BLOCK CREATED: TOTAL COUNT: %d-------\n", normalBlockCount);
         }
     }
 
