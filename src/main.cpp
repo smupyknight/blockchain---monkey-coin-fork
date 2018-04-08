@@ -1999,14 +1999,18 @@ bool CBlock::GetCoinAge(uint64_t& nCoinAge) const
 
 int CBlock::GetPrevBlockHeight(uint256 hashPrevBlock) 
 {
-    CBlockIndex* pindexNew = new CBlockIndex();
+    int nPrevBlockHeight = 0;
+    //CBlockIndex* pindexNew = new CBlockIndex();
+
     map<uint256, CBlockIndex*>::iterator miPrev = mapBlockIndex.find(hashPrevBlock);
     if (miPrev != mapBlockIndex.end())
     {
-        pindexNew->pprev = (*miPrev).second;
-        return pindexNew->pprev->nHeight;
+        //pindexNew->pprev = (*miPrev).second;
+        nPrevBlockHeight = (*miPrev).second->nHeight;
     }
-    return pindexNew->nHeight;
+
+    //delete pindexNew;
+    return nPrevBlockHeight;
 }
 
 bool CBlock::AddToBlockIndex(unsigned int nFile, unsigned int nBlockPos, const uint256& hashProofOfStake)
