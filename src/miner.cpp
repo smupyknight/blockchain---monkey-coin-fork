@@ -614,6 +614,8 @@ void WorkMiner(CWallet *pwallet)
             }
             hash = pblock->GetHash();
 
+            printf("%s\n", hash.ToString().c_str());
+
             if (pblock->GetPrevBlockHeight(pblock->hashPrevBlock) < pindexBest->nHeight) {
                 printf("--------STALE BLOCK DETECTED--------\n");
                 bIsStaleBlock = true;
