@@ -584,7 +584,7 @@ void WorkMiner(CWallet *pwallet)
     // Make this thread recognisable as the mining thread
     RenameThread("monkey-work-miner");
 
-    bool fTryToSync = true;
+    bool bIsStaleBlock = false;
 
     while (true)
     {
@@ -602,6 +602,8 @@ void WorkMiner(CWallet *pwallet)
         const char* pszTimestamp = "https://news.bitcoin.com/large-glassware-plant-in-siberia-to-mine-bitcoin/";
         pblock->vtx[0].vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         pblock->hashMerkleRoot = pblock->BuildMerkleTree();
+
+        bIsStaleBlock = false;
         while (hash > hashTarget)
         {
             ++pblock->nNonce;
@@ -611,9 +613,19 @@ void WorkMiner(CWallet *pwallet)
                 ++pblock->nTime;
             }
             hash = pblock->GetHash();
+
+            if (pblock->GetPrevBlockHeight(pblock->hashPrevBlock) < pindexBest->nHeight) {
+                bIsStaleBlock = true;
+                break;
+            }
         }
         if (!pblock.get())
             return;
+
+        if (bIsStaleBlock) {
+            printf("--------STOP GENERATING STALE BLOCK--------\n");
+            continue;
+        }
 
         printf("--------PREV BLOCK HASH: %s--------\n", pblock->hashPrevBlock.ToString().substr(0,10).c_str());
         printf("--------PREV BLOCK HEIGHT: %d--------\n", pblock->GetPrevBlockHeight(pblock->hashPrevBlock));
