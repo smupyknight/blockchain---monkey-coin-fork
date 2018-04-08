@@ -919,7 +919,7 @@ public:
     // ppcoin: two types of block: proof-of-work or proof-of-stake
     bool IsProofOfStake() const
     {
-        if (vtx[1].IsCoinStake()) {
+        if (vtx.size() > 1 && vtx[1].IsCoinStake()) {
             printf("--------PRINTF: ISCOINSTAKE IS TRUE--------\n");
         }
         return (vtx.size() > 1 && vtx[1].IsCoinStake());
