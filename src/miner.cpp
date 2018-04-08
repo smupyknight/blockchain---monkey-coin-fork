@@ -615,6 +615,7 @@ void WorkMiner(CWallet *pwallet)
             hash = pblock->GetHash();
 
             if (pblock->GetPrevBlockHeight(pblock->hashPrevBlock) < pindexBest->nHeight) {
+                printf("--------STALE BLOCK DETECTED--------\n");
                 bIsStaleBlock = true;
                 break;
             }
