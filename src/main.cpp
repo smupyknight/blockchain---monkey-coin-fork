@@ -2249,7 +2249,6 @@ bool CBlock::AcceptBlock()
     uint256 hashProofOfStake = 0, targetProofOfStake = 0;
     if (IsProofOfStake())
     {
-        printf("--------PRINTF: BLOCK WAS MISUNDERSTOOD AS POS--------\n");
         if (!CheckProofOfStake(vtx[1], nBits, hashProofOfStake, targetProofOfStake))
         {
             printf("WARNING: ProcessBlock(): check proof-of-stake failed for block %s\n", hash.ToString().c_str());
