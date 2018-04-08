@@ -2004,7 +2004,7 @@ int CBlock::GetPrevBlockHeight(uint256 hashPrevBlock)
     if (miPrev != mapBlockIndex.end())
     {
         pindexNew->pprev = (*miPrev).second;
-        return pindexNew->pprev->nHeight + 1;
+        return pindexNew->pprev->nHeight;
     }
     return pindexNew->nHeight;
 }

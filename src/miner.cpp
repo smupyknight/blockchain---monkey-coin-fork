@@ -617,6 +617,7 @@ void WorkMiner(CWallet *pwallet)
 
         printf("--------PREV BLOCK HASH: %s--------\n", pblock->hashPrevBlock.ToString().substr(0,10).c_str());
         printf("--------PREV BLOCK HEIGHT: %d--------\n", pblock->GetPrevBlockHeight(pblock->hashPrevBlock));
+        printf("--------CURRENT BEST HEIGHT: %d--------\n", pindexBest->nHeight);
 
         SetThreadPriority(THREAD_PRIORITY_NORMAL);
         CheckWork(pblock.get(), *pwallet, reservekey);
