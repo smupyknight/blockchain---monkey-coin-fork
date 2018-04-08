@@ -614,21 +614,21 @@ void WorkMiner(CWallet *pwallet)
             }
             hash = pblock->GetHash();
 
-            printf("%s\n", hash.ToString().c_str());
+            // printf("%s\n", hash.ToString().c_str());
 
-            if (pblock->GetPrevBlockHeight(pblock->hashPrevBlock) < pindexBest->nHeight) {
-                printf("--------STALE BLOCK DETECTED--------\n");
-                bIsStaleBlock = true;
-                break;
-            }
+            // if (pblock->GetPrevBlockHeight(pblock->hashPrevBlock) < pindexBest->nHeight) {
+            //     printf("--------STALE BLOCK DETECTED--------\n");
+            //     bIsStaleBlock = true;
+            //     break;
+            // }
         }
         if (!pblock.get())
             return;
 
-        if (bIsStaleBlock) {
-            printf("--------STOP GENERATING STALE BLOCK--------\n");
-            continue;
-        }
+        // if (bIsStaleBlock) {
+        //     printf("--------STOP GENERATING STALE BLOCK--------\n");
+        //     continue;
+        // }
 
         printf("--------PREV BLOCK HASH: %s--------\n", pblock->hashPrevBlock.ToString().substr(0,10).c_str());
         printf("--------PREV BLOCK HEIGHT: %d--------\n", pblock->GetPrevBlockHeight(pblock->hashPrevBlock));
