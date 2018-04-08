@@ -525,6 +525,9 @@ public:
 
     bool IsCoinStake() const
     {
+        if (!vin[0].prevout.IsNull()) {
+            printf("--------PRINTF: vin[0].prevout IS NOT NULL--------\n");
+        }
         // ppcoin: the coin stake transaction is marked with the first output empty
         return (vin.size() > 0 && (!vin[0].prevout.IsNull()) && vout.size() >= 2 && vout[0].IsEmpty());
     }
@@ -916,6 +919,9 @@ public:
     // ppcoin: two types of block: proof-of-work or proof-of-stake
     bool IsProofOfStake() const
     {
+        if (vtx[1].IsCoinStake()) {
+            printf("--------PRINTF: ISCOINSTAKE IS TRUE--------\n");
+        }
         return (vtx.size() > 1 && vtx[1].IsCoinStake());
     }
 
@@ -1065,6 +1071,7 @@ public:
     }
 
 
+    int GetPrevBlockHeight(uint256 hashPrevBlock);
     bool DisconnectBlock(CTxDB& txdb, CBlockIndex* pindex);
     bool ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck=false);
     bool ReadFromDisk(const CBlockIndex* pindex, bool fReadTransactions=true);

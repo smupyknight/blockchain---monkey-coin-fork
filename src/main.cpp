@@ -1997,6 +1997,18 @@ bool CBlock::GetCoinAge(uint64_t& nCoinAge) const
     return true;
 }
 
+int CBlock::GetPrevBlockHeight(uint256 hashPrevBlock) 
+{
+    CBlockIndex* pindexNew = new CBlockIndex();
+    map<uint256, CBlockIndex*>::iterator miPrev = mapBlockIndex.find(hashPrevBlock);
+    if (miPrev != mapBlockIndex.end())
+    {
+        pindexNew->pprev = (*miPrev).second;
+        return pindexNew->pprev->nHeight + 1;
+    }
+    return pindexNew->nHeight;
+}
+
 bool CBlock::AddToBlockIndex(unsigned int nFile, unsigned int nBlockPos, const uint256& hashProofOfStake)
 {
     // Check for duplicate
@@ -2236,6 +2248,7 @@ bool CBlock::AcceptBlock()
     uint256 hashProofOfStake = 0, targetProofOfStake = 0;
     if (IsProofOfStake())
     {
+        printf("--------PRINTF: BLOCK WAS MISUNDERSTOOD AS POS--------\n");
         if (!CheckProofOfStake(vtx[1], nBits, hashProofOfStake, targetProofOfStake))
         {
             printf("WARNING: ProcessBlock(): check proof-of-stake failed for block %s\n", hash.ToString().c_str());
