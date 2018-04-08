@@ -2000,16 +2000,13 @@ bool CBlock::GetCoinAge(uint64_t& nCoinAge) const
 int CBlock::GetPrevBlockHeight(uint256 hashPrevBlock) 
 {
     int nPrevBlockHeight = 0;
-    //CBlockIndex* pindexNew = new CBlockIndex();
 
     map<uint256, CBlockIndex*>::iterator miPrev = mapBlockIndex.find(hashPrevBlock);
     if (miPrev != mapBlockIndex.end())
     {
-        //pindexNew->pprev = (*miPrev).second;
         nPrevBlockHeight = (*miPrev).second->nHeight;
     }
 
-    //delete pindexNew;
     return nPrevBlockHeight;
 }
 
