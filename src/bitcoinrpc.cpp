@@ -42,7 +42,7 @@ void ThreadRPCServer3(void* parg);
 
 static inline unsigned short GetDefaultRPCPort()
 {
-    return GetBoolArg("-testnet", false) ? 51297 : 51296;
+    return GetBoolArg("-testnet", false) ? 51296 : 51297;
     //return GetBoolArg("-testnet", false) ? 8102 : 8101;
 }
 
