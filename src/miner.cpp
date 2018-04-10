@@ -614,22 +614,22 @@ void WorkMiner(CWallet *pwallet)
             }
             hash = pblock->GetHash();
 
-            // if (pblock->GetPrevBlockHeight(pblock->hashPrevBlock) < pindexBest->nHeight) {
-            //     bIsStaleBlock = true;
-            //     break;
-            // }
+            if (pblock->GetPrevBlockHeight(pblock->hashPrevBlock) < pindexBest->nHeight) {
+                bIsStaleBlock = true;
+                break;
+            }
         }
         if (!pblock.get())
             return;
 
-        // if (bIsStaleBlock) {
-        //     printf("--------STOP GENERATING STALE BLOCK--------\n");
-        //     continue;
-        // }
+        if (bIsStaleBlock) {
+            printf("--------STOP GENERATING STALE BLOCK--------\n");
+            continue;
+        }
 
-        // printf("--------PREV BLOCK HASH: %s--------\n", pblock->hashPrevBlock.ToString().substr(0,10).c_str());
-        // printf("--------PREV BLOCK HEIGHT: %d--------\n", pblock->GetPrevBlockHeight(pblock->hashPrevBlock));
-        // printf("--------CURRENT BEST HEIGHT: %d--------\n", pindexBest->nHeight);
+        printf("--------PREV BLOCK HASH: %s--------\n", pblock->hashPrevBlock.ToString().substr(0,10).c_str());
+        printf("--------PREV BLOCK HEIGHT: %d--------\n", pblock->GetPrevBlockHeight(pblock->hashPrevBlock));
+        printf("--------CURRENT BEST HEIGHT: %d--------\n", pindexBest->nHeight);
 
         SetThreadPriority(THREAD_PRIORITY_NORMAL);
         CheckWork(pblock.get(), *pwallet, reservekey);
