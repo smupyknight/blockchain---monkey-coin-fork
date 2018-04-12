@@ -1015,7 +1015,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Unix: ~/.monkey
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "monkey";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "corallium";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -1027,10 +1027,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "monkey";
+    return pathRet / "corallium";
 #else
     // Unix
-    return pathRet / ".monkey";
+    return pathRet / ".corallium";
 #endif
 #endif
 }
@@ -1072,7 +1072,7 @@ const boost::filesystem::path &GetDataDir(bool fNetSpecific)
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "monkey.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "corallium.conf"));
     if (!pathConfigFile.is_complete()) pathConfigFile = GetDataDir(false) / pathConfigFile;
     return pathConfigFile;
 }

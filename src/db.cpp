@@ -234,7 +234,8 @@ CDB::CDB(const char *pszFile, const char* pszMode) :
     pdb(NULL), activeTxn(NULL)
 {
     int ret;
-    if (pszFile == NULL)
+
+    if (pszFile == NULL || strcmp(pszFile, "") == 0)
         return;
 
     fReadOnly = (!strchr(pszMode, '+') && !strchr(pszMode, 'w'));
@@ -270,7 +271,7 @@ CDB::CDB(const char *pszFile, const char* pszMode) :
                             DB_BTREE,  // Database type
                             nFlags,    // Flags
                             0);
-
+            
             if (ret != 0)
             {
                 delete pdb;

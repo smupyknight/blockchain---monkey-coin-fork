@@ -1,4 +1,4 @@
-#include "bitcoinunits.h"
+﻿#include "bitcoinunits.h"
 
 #include <QStringList>
 
@@ -34,9 +34,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("MONK");
-    case mBTC: return QString("mMONK");
-    case uBTC: return QString::fromUtf8("μMONK");
+    case BTC: return QString("Corallium");
+    case mBTC: return QString("mCorallium");
+    case uBTC: return QString::fromUtf8("μCorallium");
     default: return QString("???");
     }
 }
@@ -45,9 +45,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("monkeys");
-    case mBTC: return QString("Milli-monkeys (1 / 1,000)");
-    case uBTC: return QString("Micro-monkeys (1 / 1,000,000)");
+    case BTC: return QString("coralliums");
+    case mBTC: return QString("Milli-coralliums (1 / 1,000)");
+    case uBTC: return QString("Micro-coralliums (1 / 1,000,000)");
     default: return QString("???");
     }
 }

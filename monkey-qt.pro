@@ -1,5 +1,5 @@
 TEMPLATE = app
-TARGET = Monkey-qt
+TARGET = Corallium-qt
 VERSION = 1.4.2
 INCLUDEPATH += src src/json src/qt
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
@@ -48,6 +48,15 @@ macx {
     BDB_INCLUDE_PATH = /usr/local/Cellar/berkeley-db@4/4.8.30/include
     BOOST_LIB_PATH = /opt/local/lib
     BOOST_INCLUDE_PATH = /opt/local/include
+}
+
+win32 {
+    OPENSSL_INCLUDE_PATH = D:\CoinEnv\Deps\openssl-1.0.2o\include
+    OPENSSL_LIB_PATH = D:\CoinEnv\Deps\openssl-1.0.2o
+    BDB_LIB_PATH = D:\CoinEnv\Deps\db-4.8.30\build_unix
+    BDB_INCLUDE_PATH = D:\CoinEnv\Deps\db-4.8.30\build_unix
+    BOOST_LIB_PATH = D:\CoinEnv\Deps\boost_1_65_0\stage\lib
+    BOOST_INCLUDE_PATH = D:\CoinEnv\Deps\boost_1_65_0
 }
 
 !win32 {
@@ -423,7 +432,7 @@ OTHER_FILES += \
 # platform specific defaults, if not overridden on command line
 isEmpty(BOOST_LIB_SUFFIX) {
     macx:BOOST_LIB_SUFFIX = -mt
-    windows:BOOST_LIB_SUFFIX = -mgw49-mt-s-1_55
+    windows:BOOST_LIB_SUFFIX = -mgw63-mt-s-1_65
 }
 
 isEmpty(BOOST_THREAD_LIB_SUFFIX) {
