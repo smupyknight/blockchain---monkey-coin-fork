@@ -603,8 +603,11 @@ void WorkMiner(CWallet *pwallet)
         const char* pszTimestamp = "https://news.bitcoin.com/large-glassware-plant-in-siberia-to-mine-bitcoin/";
         pblock->vtx[0].vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         pblock->hashMerkleRoot = pblock->BuildMerkleTree();
+
+        int nPowCount = 0;
         while (hash > hashTarget)
         {
+            printf("Pow Count: %d\n", nPowCount++);
             ++pblock->nNonce;
             if (pblock->nNonce == 0)
             {
