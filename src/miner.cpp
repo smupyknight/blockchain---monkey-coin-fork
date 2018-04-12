@@ -604,6 +604,8 @@ void WorkMiner(CWallet *pwallet)
         pblock->hashMerkleRoot = pblock->BuildMerkleTree();
 
         bIsStaleBlock = false;
+
+        int nPowCount = 0;
         while (hash > hashTarget)
         {
             ++pblock->nNonce;
@@ -613,6 +615,7 @@ void WorkMiner(CWallet *pwallet)
                 ++pblock->nTime;
             }
             hash = pblock->GetHash();
+            printf("Pow Count: %d\n", nPowCount++);
 
             if (pblock->GetPrevBlockHeight(pblock->hashPrevBlock) < pindexBest->nHeight) {
                 bIsStaleBlock = true;
